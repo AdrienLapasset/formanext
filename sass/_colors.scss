@@ -4,7 +4,17 @@ $gris: #eef4f2;
 
 .red {
   color: $rouge;
+  fill: $rouge;
+  &:hover {
+    color: $rouge;
+    fill: $rouge;
+  }
 }
 .blue {
   color: $bleu;
+  fill: $bleu;
+  &:hover {
+    color: $bleu;
+    fill: $bleu;
+  }
 }

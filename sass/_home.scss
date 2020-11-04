@@ -1,0 +1,39 @@
+.home {
+  &__landing {
+    display: flex;
+    flex-direction: column-reverse;
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+    & > * {
+      &:first-child {
+        flex: unset;
+        @media (min-width: 992px) {
+          flex: 0 0 53%;
+        }
+      }
+    }
+    &__heading {
+      font-size: 55px;
+      font-weight: 700;
+      margin: 60px 0 20px;
+    }
+    &__text {
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+    &__link {
+      display: block;
+      font-size: 25px;
+      text-decoration: underline;
+      font-weight: 700;
+    }
+    &__img {
+      max-width: 100%;
+      @media (min-width: 992px) {
+        transform: translateX(-30px);
+        max-width: unset;
+      }
+    }
+  }
+}
