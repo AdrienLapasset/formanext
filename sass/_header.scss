@@ -1,0 +1,19 @@
+.header {
+  &__contact {
+    background-color: $bleu;
+    color: white;
+  }
+  .navbar-expand-lg {
+    .navbar-nav {
+      .nav-link {
+        display: flex;
+        @media (min-width: 992px) {
+          padding: 0 1rem;
+        }
+        &__icon {
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+}

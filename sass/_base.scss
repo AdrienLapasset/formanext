@@ -1,0 +1,29 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: black;
+  font-size: 14px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: black;
+  cursor: pointer;
+  &:hover {
+    color: black;
+    text-decoration: underline;
+  }
+  &.nav-link {
+    &:hover {
+      color: black;
+      text-decoration: underline;
+    }
+  }
+}
