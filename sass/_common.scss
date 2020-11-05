@@ -1,0 +1,74 @@
+// Common classes begin with "c-" prefix
+
+// HEADINGS
+.c-heading {
+  font-size: 35px;
+  font-weight: 700;
+  text-align: center;
+}
+
+// TAGS
+.c-tag {
+  border: 1px solid black;
+  border-radius: 0;
+  font-size: 12px;
+  padding: 5px 8px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  &__icon {
+    margin-right: 5px;
+  }
+  &--grey {
+    font-size: 9px;
+    color: $grey-dark;
+    border-color: $grey-dark;
+  }
+}
+
+// CARDS
+.c-card {
+  position: relative;
+  width: 360px;
+  padding: 0 10px 15px 15px;
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 30px);
+    left: 0;
+    top: 30px;
+  }
+  &__content {
+    position: relative;
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.2);
+  }
+  &__heading {
+    margin-top: 20px;
+    font-size: 28px;
+    font-weight: 700;
+  }
+}
+
+// BUTTON
+.c-btn {
+  color: white;
+  font-size: 20px;
+  font-weight: 700;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  padding: 0 30px;
+  &--red {
+    background-color: $red;
+  }
+  &--blue {
+    background-color: $blue;
+  }
+}

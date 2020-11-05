@@ -1,20 +1,21 @@
-$rouge: #fe4040;
-$bleu: #2ab7c0;
-$gris: #eef4f2;
+$red: #fe4040;
+$blue: #2ab7c0;
+$grey-dark: #7f7f7f;
+$grey: #eef4f2;
 
 .red {
-  color: $rouge;
-  fill: $rouge;
+  color: $red;
+  fill: $red;
   &:hover {
-    color: $rouge;
-    fill: $rouge;
+    color: $red;
+    fill: $red;
   }
 }
 .blue {
-  color: $bleu;
-  fill: $bleu;
+  color: $blue;
+  fill: $blue;
   &:hover {
-    color: $bleu;
-    fill: $bleu;
+    color: $blue;
+    fill: $blue;
   }
 }

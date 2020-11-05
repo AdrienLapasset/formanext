@@ -1,5 +1,6 @@
 .home {
   &__landing {
+    margin-bottom: 60px;
     display: flex;
     flex-direction: column-reverse;
     @media (min-width: 992px) {
@@ -33,6 +34,27 @@
       @media (min-width: 992px) {
         transform: translateX(-30px);
         max-width: unset;
+      }
+    }
+  }
+  &__formations {
+    &__bg {
+      background-image: url("/assets/imgs/nos-formations-metiers-bg.svg");
+      background-size: cover;
+      background-position: top center;
+      background-repeat: no-repeat;
+    }
+    padding: 100px 0;
+    .c-tag {
+      margin: 0 4px;
+    }
+    &__cards {
+      column-count: 3;
+      column-gap: 1rem;
+      height: 1000px;
+      .c-card {
+        display: inline-block;
+        margin-bottom: 40px;
       }
     }
   }
