@@ -45,16 +45,19 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    box-shadow: 15px 15px 15px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
   }
   &__heading {
     margin-top: 20px;
     font-size: 28px;
     font-weight: 700;
+    &--large {
+      font-size: 35px;
+    }
   }
 }
 
-// BUTTON
+// BUTTONS
 .c-btn {
   color: white;
   font-size: 20px;
