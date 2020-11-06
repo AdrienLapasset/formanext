@@ -10,7 +10,9 @@
         display: flex;
         align-items: center;
         .nav-link {
+          font-size: 18px;
           display: flex;
+          align-items: center;
           transition: transform 0.5s, color 0.5s;
           @media (min-width: 992px) {
             padding: 0 1rem;
@@ -49,7 +51,7 @@
     }
     &__input {
       border: 1px solid $red;
-      padding: 5px 35px;
+      padding: 6px 35px;
       width: 400px;
       text-align: right;
       color: black;
@@ -62,7 +64,7 @@
     &__clear {
       cursor: pointer;
       position: absolute;
-      top: 7px;
+      top: 8px;
       right: 10px;
     }
     &--active {
