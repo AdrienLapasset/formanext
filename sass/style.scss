@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap");
 
+@import "../modules/bootstrap-4.5.3/scss/functions";
+@import "../modules/bootstrap-4.5.3/scss/variables";
+@import "../modules/bootstrap-4.5.3/scss/mixins/_breakpoints";
+
 @import "colors";
 @import "base";
 @import "common";

@@ -402,7 +402,8 @@ a.nav-link:hover {
   background-image: url("/assets/imgs/nos-formations-metiers-bg.svg");
   background-size: cover;
   background-position: top center;
-  background-repeat: no-repeat;
+  max-width: 1840px;
+  margin: auto;
 }
 
 .home__formations__cards {
@@ -513,7 +514,22 @@ a.nav-link:hover {
 }
 
 .les-entreprises {
+  margin-top: 40px;
   padding: 100px 0;
+}
+
+.les-entreprises__bg {
+  background-image: url("/assets/imgs/les-entreprises-bg.svg");
+  background-size: cover;
+  background-position: top center;
+  max-width: 1840px;
+  margin: auto;
+}
+
+.les-entreprises__logo {
+  max-width: 180px;
+  max-height: 100px;
+  margin: 20px 15px;
 }
 
 .nos-participants {

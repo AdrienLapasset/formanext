@@ -43,7 +43,8 @@
       background-image: url("/assets/imgs/nos-formations-metiers-bg.svg");
       background-size: cover;
       background-position: top center;
-      background-repeat: no-repeat;
+      max-width: 1840px;
+      margin: auto;
     }
     &__cards {
       column-count: 3;
@@ -113,7 +114,20 @@
 }
 
 .les-entreprises {
+  margin-top: 40px;
   padding: 100px 0;
+  &__bg {
+    background-image: url("/assets/imgs/les-entreprises-bg.svg");
+    background-size: cover;
+    background-position: top center;
+    max-width: 1840px;
+    margin: auto;
+  }
+  &__logo {
+    max-width: 180px;
+    max-height: 100px;
+    margin: 20px 15px;
+  }
 }
 
 .nos-participants {
