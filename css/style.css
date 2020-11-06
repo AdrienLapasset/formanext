@@ -75,6 +75,8 @@ a.nav-link:hover {
 }
 
 .c-tag__icon {
+  max-height: 20px;
+  max-width: 20px;
   margin-right: 5px;
 }
 
@@ -82,6 +84,11 @@ a.nav-link:hover {
   font-size: 9px;
   color: #7f7f7f;
   border-color: #7f7f7f;
+}
+
+.c-tag--grey .c-tag__icon {
+  max-height: 15px;
+  max-width: 15px;
 }
 
 .c-card {
@@ -116,8 +123,11 @@ a.nav-link:hover {
           box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
 }
 
+.c-card .c-tag {
+  margin-bottom: 20px;
+}
+
 .c-card__heading {
-  margin-top: 20px;
   font-size: 28px;
   font-weight: 700;
 }
@@ -142,6 +152,8 @@ a.nav-link:hover {
           align-items: center;
   border-radius: 45px;
   padding: 0 30px;
+  -webkit-box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.3);
 }
 
 .c-btn--red {
@@ -174,6 +186,8 @@ a.nav-link:hover {
 }
 
 .header .navbar-expand-lg .navbar-nav .nav-link__icon {
+  height: 20px;
+  width: 24px;
   margin-left: 5px;
 }
 
@@ -252,10 +266,6 @@ a.nav-link:hover {
   background-repeat: no-repeat;
 }
 
-.home__formations .c-tag {
-  margin: 0 4px;
-}
-
 .home__formations__cards {
   -webkit-column-count: 3;
           column-count: 3;
@@ -269,14 +279,16 @@ a.nav-link:hover {
   margin-bottom: 40px;
 }
 
-.notre-priorite {
+.notre-priorite,
+.financer-a-100 {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.notre-priorite .c-card {
+.notre-priorite .c-card,
+.financer-a-100 .c-card {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 350px;
           flex: 0 0 350px;
@@ -287,7 +299,13 @@ a.nav-link:hover {
   height: fit-content;
 }
 
-.notre-priorite__points {
+.notre-priorite .c-card__content,
+.financer-a-100 .c-card__content {
+  padding: 40px;
+}
+
+.notre-priorite__points,
+.financer-a-100__points {
   background-color: #eef4f2;
   padding: 50px 50px 50px 150px;
   display: -webkit-box;
@@ -302,7 +320,8 @@ a.nav-link:hover {
           align-items: flex-start;
 }
 
-.notre-priorite__number {
+.notre-priorite__number,
+.financer-a-100__number {
   background-color: #fe4040;
   font-size: 55px;
   font-weight: 700;
@@ -324,8 +343,33 @@ a.nav-link:hover {
   margin-right: 30px;
 }
 
-.notre-priorite__heading {
+.notre-priorite__heading,
+.financer-a-100__heading {
   font-size: 20px;
   font-weight: 700;
+}
+
+.financer-a-100 {
+  margin-top: 30px;
+}
+
+.financer-a-100__number {
+  background-color: #2ab7c0;
+}
+
+.financer-a-100 .c-card {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 420px;
+          flex: 0 0 420px;
+  -webkit-transform: translate(-80px, 50px);
+          transform: translate(-80px, 50px);
+}
+
+.financer-a-100 .c-card__content {
+  padding: 60px 40px;
+}
+
+.financer-a-100__points {
+  padding: 50px 150px 50px 50px;
 }
 /*# sourceMappingURL=style.css.map */

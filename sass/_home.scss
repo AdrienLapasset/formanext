@@ -38,15 +38,12 @@
     }
   }
   &__formations {
+    padding: 100px 0;
     &__bg {
       background-image: url("/assets/imgs/nos-formations-metiers-bg.svg");
       background-size: cover;
       background-position: top center;
       background-repeat: no-repeat;
-    }
-    padding: 100px 0;
-    .c-tag {
-      margin: 0 4px;
     }
     &__cards {
       column-count: 3;
@@ -60,13 +57,17 @@
   }
 }
 
-.notre-priorite {
+.notre-priorite,
+.financer-a-100 {
   margin-top: 20px;
   display: flex;
   .c-card {
     flex: 0 0 350px;
     transform: translate(80px, 50px);
     height: fit-content;
+    &__content {
+      padding: 40px;
+    }
   }
   &__points {
     background-color: $grey;
@@ -91,5 +92,22 @@
   &__heading {
     font-size: 20px;
     font-weight: 700;
+  }
+}
+
+.financer-a-100 {
+  margin-top: 30px;
+  &__number {
+    background-color: $blue;
+  }
+  .c-card {
+    flex: 0 0 420px;
+    transform: translate(-80px, 50px);
+    &__content {
+      padding: 60px 40px;
+    }
+  }
+  &__points {
+    padding: 50px 150px 50px 50px;
   }
 }
