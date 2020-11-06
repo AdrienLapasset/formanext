@@ -2,9 +2,12 @@
 
 // HEADINGS
 .c-heading {
-  font-size: 35px;
+  font-size: 24px;
   font-weight: 700;
   text-align: center;
+  @include media-breakpoint-up(lg) {
+    font-size: 35px;
+  }
 }
 
 // TAGS
@@ -16,6 +19,7 @@
   text-transform: uppercase;
   display: flex;
   align-items: center;
+  margin-bottom: 0.5rem;
   &__icon {
     max-height: 20px;
     max-width: 20px;
@@ -35,8 +39,11 @@
 // CARDS
 .c-card {
   position: relative;
-  width: 360px;
+  width: 100%;
   padding: 0 10px 15px 15px;
+  @include media-breakpoint-up(sm) {
+    width: 360px;
+  }
   &__bg {
     position: absolute;
     width: 100%;
@@ -57,10 +64,16 @@
     margin-bottom: 20px;
   }
   &__heading {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
+    @include media-breakpoint-up(lg) {
+      font-size: 28px;
+    }
     &--large {
-      font-size: 35px;
+      font-size: 24px;
+      @include media-breakpoint-up(lg) {
+        font-size: 35px;
+      }
     }
   }
 }
@@ -68,15 +81,18 @@
 // BUTTONS
 .c-btn {
   color: white;
-  font-size: 20px;
   font-weight: 700;
-  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 45px;
-  padding: 0 30px;
+  padding: 10px 30px;
   box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  text-align: center;
+  @include media-breakpoint-up(sm) {
+    font-size: 20px;
+  }
   &--red {
     background-color: $red;
   }
@@ -88,7 +104,12 @@
 // COMMENTS
 .c-comment {
   position: relative;
-  margin-top: 60px;
+  margin: 60px auto 0;
+  max-width: 380px;
+  @include media-breakpoint-up(lg) {
+    margin: 0;
+    max-width: unset;
+  }
   &__text {
     display: flex;
     align-items: center;

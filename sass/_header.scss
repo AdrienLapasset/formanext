@@ -1,21 +1,33 @@
 .header {
-  margin-bottom: 50px;
+  margin-bottom: 20px;
+  @include media-breakpoint-up(lg) {
+    margin-bottom: 50px;
+  }
   &__contact {
     background-color: $blue;
     color: white;
   }
   .navbar {
+    .navbar-brand {
+      width: 200px;
+      @include media-breakpoint-up(lg) {
+        width: unset;
+      }
+    }
     .navbar-nav {
       .nav-item {
         display: flex;
         align-items: center;
         .nav-link {
-          font-size: 18px;
+          color: black;
           display: flex;
           align-items: center;
           transition: transform 0.5s, color 0.5s;
-          @media (min-width: 992px) {
+          @include media-breakpoint-up(lg) {
             padding: 0 1rem;
+          }
+          @include media-breakpoint-up(xl) {
+            font-size: 18px;
           }
           &__icon {
             height: 20px;
@@ -23,13 +35,21 @@
             margin-left: 5px;
             transition: fill 0.5s;
           }
+          &--red {
+            color: $red;
+            .nav-link__icon {
+              fill: $red;
+            }
+          }
           &:hover {
             transform: translateX(5px);
             text-decoration: none;
             color: $red;
-            &.red {
+            &.nav-link--red {
               color: $red-dark;
-              fill: $red-dark;
+              .nav-link__icon {
+                fill: $red-dark;
+              }
             }
           }
         }
@@ -47,16 +67,20 @@
     &__form {
       display: none;
       position: absolute;
-      right: 0;
+      @include media-breakpoint-up(lg) {
+        right: 0;
+      }
     }
     &__input {
       border: 1px solid $red;
       padding: 6px 35px;
-      width: 400px;
       text-align: right;
       color: black;
       font-size: 12px;
       outline: none;
+      @include media-breakpoint-up(lg) {
+        width: 400px;
+      }
     }
     ::placeholder {
       color: $grey;

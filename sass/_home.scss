@@ -1,44 +1,66 @@
 .home {
-  &__landing {
-    margin-bottom: 60px;
+  .je-me-forme {
     display: flex;
     flex-direction: column-reverse;
-    @media (min-width: 992px) {
+    @include media-breakpoint-up(lg) {
+      margin-bottom: 60px;
       flex-direction: row;
     }
     & > * {
       &:first-child {
         flex: unset;
-        @media (min-width: 992px) {
+        @include media-breakpoint-up(lg) {
           flex: 0 0 53%;
         }
       }
     }
     &__heading {
-      font-size: 55px;
+      font-size: 35px;
       font-weight: 700;
-      margin: 60px 0 20px;
+      margin: 20px 0 20px;
+      @include media-breakpoint-up(lg) {
+        font-size: 55px;
+        margin: 60px 0 20px;
+      }
     }
     &__text {
       font-size: 18px;
       margin-bottom: 30px;
     }
+    &__chevron {
+      margin-right: 5px;
+      width: 20px;
+      @include media-breakpoint-up(sm) {
+        width: 36px;
+      }
+    }
     &__link {
       display: block;
-      font-size: 25px;
       text-decoration: underline;
       font-weight: 700;
+      @include media-breakpoint-up(sm) {
+        font-size: 18px;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 25px;
+      }
     }
     &__img {
       max-width: 100%;
-      @media (min-width: 992px) {
+      @include media-breakpoint-up(lg) {
         transform: translateX(-30px);
-        max-width: unset;
       }
     }
   }
-  &__formations {
-    padding: 100px 0;
+
+  .nos-formations {
+    padding: 180px 0;
+    @include media-breakpoint-up(sm) {
+      padding: 150px 0;
+    }
+    @include media-breakpoint-up(xl) {
+      padding: 100px 0;
+    }
     &__bg {
       background-image: url("/assets/imgs/nos-formations-metiers-bg.svg");
       background-size: cover;
@@ -47,95 +69,133 @@
       margin: auto;
     }
     &__cards {
-      column-count: 3;
-      column-gap: 1rem;
-      height: 1000px;
+      @include media-breakpoint-up(lg) {
+        column-count: 2;
+        height: 1410px;
+      }
+      @include media-breakpoint-up(xl) {
+        height: 1000px;
+        column-count: 3;
+      }
       .c-card {
-        display: inline-block;
-        margin-bottom: 40px;
+        margin: 0 auto 40px;
+        @include media-breakpoint-up(lg) {
+          display: inline-block;
+          margin-left: 50px;
+        }
       }
     }
   }
-}
 
-.notre-priorite,
-.financer-a-100 {
-  margin-top: 20px;
-  display: flex;
-  .c-card {
-    flex: 0 0 350px;
-    transform: translate(80px, 50px);
-    height: fit-content;
-    &__content {
-      padding: 40px;
-    }
-  }
-  &__points {
-    background-color: $grey;
-    padding: 50px 50px 50px 150px;
+  .notre-priorite,
+  .financer-a-100 {
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-  }
-  &__number {
-    background-color: $red;
-    font-size: 55px;
-    font-weight: 700;
-    color: white;
-    flex: 0 0 70px;
-    height: 70px;
-    border-radius: 70px;
-    display: flex;
     align-items: center;
-    justify-content: center;
-    margin-right: 30px;
-  }
-  &__heading {
-    font-size: 20px;
-    font-weight: 700;
-  }
-}
-
-.financer-a-100 {
-  margin-top: 30px;
-  &__number {
-    background-color: $blue;
-  }
-  .c-card {
-    flex: 0 0 420px;
-    transform: translate(-80px, 50px);
-    &__content {
-      padding: 60px 40px;
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      align-items: start;
+    }
+    .c-card {
+      height: fit-content;
+      margin-bottom: 40px;
+      @include media-breakpoint-up(lg) {
+        margin-bottom: 0;
+        transform: translate(80px, 50px);
+        flex: 0 0 350px;
+      }
+      &__content {
+        padding: 40px;
+      }
+    }
+    &__points {
+      background-color: $grey;
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      @include media-breakpoint-up(lg) {
+        padding: 50px 50px 50px 150px;
+      }
+    }
+    &__number {
+      background-color: $red;
+      font-size: 55px;
+      font-weight: 700;
+      color: white;
+      flex: 0 0 70px;
+      width: 70px;
+      height: 70px;
+      border-radius: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 15px;
+      @include media-breakpoint-up(sm) {
+        margin-right: 30px;
+      }
+    }
+    &__heading {
+      font-size: 20px;
+      font-weight: 700;
     }
   }
-  &__points {
-    padding: 50px 150px 50px 50px;
-  }
-}
 
-.les-entreprises {
-  margin-top: 40px;
-  padding: 100px 0;
-  &__bg {
-    background-image: url("/assets/imgs/les-entreprises-bg.svg");
-    background-size: cover;
-    background-position: top center;
-    max-width: 1840px;
-    margin: auto;
+  .financer-a-100 {
+    margin-top: 30px;
+    &__number {
+      background-color: $blue;
+    }
+    .c-card {
+      margin-top: 40px;
+      @include media-breakpoint-up(lg) {
+        margin-top: 0;
+        flex: 0 0 420px;
+        transform: translate(-80px, 50px);
+      }
+      &__content {
+        padding: 60px 40px;
+      }
+    }
+    &__points {
+      padding: 30px;
+      @include media-breakpoint-up(lg) {
+        padding: 50px 150px 50px 50px;
+      }
+    }
   }
-  &__logo {
-    max-width: 180px;
-    max-height: 100px;
-    margin: 20px 15px;
+
+  .les-entreprises {
+    margin-top: 40px;
+    padding: 100px 0;
+    &__bg {
+      background-image: url("/assets/imgs/les-entreprises-bg.svg");
+      background-size: cover;
+      background-position: top center;
+      max-width: 1840px;
+      margin: auto;
+    }
+    &__logo {
+      max-width: 180px;
+      max-height: 100px;
+      margin: 20px 15px;
+    }
   }
-}
 
-.nos-participants {
-  margin-top: 60px;
-}
+  .nos-participants {
+    margin-top: 60px;
+  }
 
-.nos-gages {
-  margin-top: 40px;
-  padding: 40px 0;
-  background-color: $grey;
+  .nos-gages {
+    margin-top: 40px;
+    padding: 40px 0;
+    background-color: $grey;
+    &__logo {
+      display: block;
+      max-width: 180px;
+      max-height: 100px;
+      margin: 0 auto 20px;
+    }
+  }
 }
