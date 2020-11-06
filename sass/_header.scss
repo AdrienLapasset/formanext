@@ -4,17 +4,64 @@
     background-color: $blue;
     color: white;
   }
-  .navbar-expand-lg {
+  .navbar {
     .navbar-nav {
-      .nav-link {
+      .nav-item {
         display: flex;
-        @media (min-width: 992px) {
-          padding: 0 1rem;
+        align-items: center;
+        .nav-link {
+          display: flex;
+          @media (min-width: 992px) {
+            padding: 0 1rem;
+          }
+          &__icon {
+            height: 20px;
+            width: 24px;
+            margin-left: 5px;
+          }
         }
-        &__icon {
-          height: 20px;
-          width: 24px;
-          margin-left: 5px;
+      }
+    }
+  }
+  .search {
+    position: relative;
+    &__btn {
+      border: none;
+      background: transparent;
+      padding: 7px;
+      outline: none;
+    }
+    &__form {
+      display: none;
+      position: absolute;
+      right: 0;
+    }
+    &__input {
+      border: 1px solid $red;
+      padding: 5px 35px;
+      width: 400px;
+      text-align: right;
+      color: black;
+      font-size: 12px;
+      outline: none;
+    }
+    ::placeholder {
+      color: $grey;
+    }
+    &__clear {
+      cursor: pointer;
+      position: absolute;
+      top: 7px;
+      right: 10px;
+    }
+    &--active {
+      .search {
+        &__btn {
+          fill: white;
+          background-color: $red;
+        }
+        &__form {
+          display: flex;
         }
       }
     }

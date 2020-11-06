@@ -203,22 +203,92 @@ a.nav-link:hover {
   color: white;
 }
 
-.header .navbar-expand-lg .navbar-nav .nav-link {
+.header .navbar .navbar-nav .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 @media (min-width: 992px) {
-  .header .navbar-expand-lg .navbar-nav .nav-link {
+  .header .navbar .navbar-nav .nav-item .nav-link {
     padding: 0 1rem;
   }
 }
 
-.header .navbar-expand-lg .navbar-nav .nav-link__icon {
+.header .navbar .navbar-nav .nav-item .nav-link__icon {
   height: 20px;
   width: 24px;
   margin-left: 5px;
+}
+
+.header .search {
+  position: relative;
+}
+
+.header .search__btn {
+  border: none;
+  background: transparent;
+  padding: 7px;
+  outline: none;
+}
+
+.header .search__form {
+  display: none;
+  position: absolute;
+  right: 0;
+}
+
+.header .search__input {
+  border: 1px solid #fe4040;
+  padding: 5px 35px;
+  width: 400px;
+  text-align: right;
+  color: black;
+  font-size: 12px;
+  outline: none;
+}
+
+.header .search ::-webkit-input-placeholder {
+  color: #eef4f2;
+}
+
+.header .search :-ms-input-placeholder {
+  color: #eef4f2;
+}
+
+.header .search ::-ms-input-placeholder {
+  color: #eef4f2;
+}
+
+.header .search ::placeholder {
+  color: #eef4f2;
+}
+
+.header .search__clear {
+  cursor: pointer;
+  position: absolute;
+  top: 7px;
+  right: 10px;
+}
+
+.header .search--active .search__btn {
+  fill: white;
+  background-color: #fe4040;
+}
+
+.header .search--active .search__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .footer {
