@@ -216,6 +216,10 @@ a.nav-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: color 0.5s, -webkit-transform 0.5s;
+  transition: color 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, color 0.5s;
+  transition: transform 0.5s, color 0.5s, -webkit-transform 0.5s;
 }
 
 @media (min-width: 992px) {
@@ -228,6 +232,20 @@ a.nav-link:hover {
   height: 20px;
   width: 24px;
   margin-left: 5px;
+  -webkit-transition: fill 0.5s;
+  transition: fill 0.5s;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link:hover {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
+  text-decoration: none;
+  color: #fe4040;
+}
+
+.header .navbar .navbar-nav .nav-item .nav-link:hover.red {
+  color: #b92c2c;
+  fill: #b92c2c;
 }
 
 .header .search {
