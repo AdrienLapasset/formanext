@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap");
 .red {
   color: #fe4040;
   fill: #fe4040;
@@ -164,6 +164,36 @@ a.nav-link:hover {
   background-color: #2ab7c0;
 }
 
+.c-comment {
+  position: relative;
+  margin-top: 60px;
+}
+
+.c-comment__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fe4040;
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  min-height: 270px;
+}
+
+.c-comment__text::before {
+  content: url("/assets/imgs/comment-bg.png");
+  position: absolute;
+}
+
+.c-comment__person {
+  font-size: 12px;
+  text-transform: uppercase;
+  line-height: 1.3;
+}
+
 .header {
   margin-bottom: 50px;
 }
@@ -189,6 +219,23 @@ a.nav-link:hover {
   height: 20px;
   width: 24px;
   margin-left: 5px;
+}
+
+.footer {
+  padding: 40px 0 100px;
+  background-color: black;
+}
+
+.footer__link {
+  margin-bottom: 10px;
+  display: block;
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+}
+
+.footer__link--red {
+  color: #fe4040;
 }
 
 .home__landing {
@@ -371,5 +418,19 @@ a.nav-link:hover {
 
 .financer-a-100__points {
   padding: 50px 150px 50px 50px;
+}
+
+.les-entreprises {
+  padding: 100px 0;
+}
+
+.nos-participants {
+  margin-top: 60px;
+}
+
+.nos-gages {
+  margin-top: 40px;
+  padding: 40px 0;
+  background-color: #eef4f2;
 }
 /*# sourceMappingURL=style.css.map */

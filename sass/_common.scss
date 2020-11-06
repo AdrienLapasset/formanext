@@ -84,3 +84,27 @@
     background-color: $blue;
   }
 }
+
+// COMMENTS
+.c-comment {
+  position: relative;
+  margin-top: 60px;
+  &__text {
+    display: flex;
+    align-items: center;
+    color: $red;
+    font-size: 25px;
+    font-weight: 700;
+    font-style: italic;
+    min-height: 270px;
+    &::before {
+      content: url("/assets/imgs/comment-bg.png");
+      position: absolute;
+    }
+  }
+  &__person {
+    font-size: 12px;
+    text-transform: uppercase;
+    line-height: 1.3;
+  }
+}
