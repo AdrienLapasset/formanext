@@ -46,11 +46,19 @@
 
 // CARDS
 .c-card {
+  display: block;
   position: relative;
   width: 100%;
   padding: 0 10px 15px 15px;
+  transition: transform 0.5s;
   @include media-breakpoint-up(sm) {
     width: 360px;
+  }
+  &:hover {
+    transform: translateY(-5px);
+    & > .c-card__content {
+      box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.3);
+    }
   }
   &__bg {
     position: absolute;
@@ -67,6 +75,7 @@
     flex-direction: column;
     align-items: flex-start;
     box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.5s;
   }
   .c-tag {
     margin-bottom: 20px;

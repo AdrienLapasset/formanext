@@ -98,14 +98,6 @@
       margin: auto;
     }
     &__cards {
-      @include media-breakpoint-up(lg) {
-        column-count: 2;
-        height: 1410px;
-      }
-      @include media-breakpoint-up(xl) {
-        height: 1000px;
-        column-count: 3;
-      }
       .c-card {
         margin: 0 auto 40px;
         @include media-breakpoint-up(lg) {

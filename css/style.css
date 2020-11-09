@@ -46,6 +46,7 @@ a {
 }
 
 a:hover {
+  color: black;
   text-decoration: none;
 }
 
@@ -109,15 +110,30 @@ a.nav-link:hover {
 }
 
 .c-card {
+  display: block;
   position: relative;
   width: 100%;
   padding: 0 10px 15px 15px;
+  -webkit-transition: -webkit-transform 0.5s;
+  transition: -webkit-transform 0.5s;
+  transition: transform 0.5s;
+  transition: transform 0.5s, -webkit-transform 0.5s;
 }
 
 @media (min-width: 576px) {
   .c-card {
     width: 360px;
   }
+}
+
+.c-card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+}
+
+.c-card:hover > .c-card__content {
+  -webkit-box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.3);
 }
 
 .c-card__bg {
@@ -144,6 +160,10 @@ a.nav-link:hover {
           align-items: flex-start;
   -webkit-box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
 }
 
 .c-card .c-tag {
@@ -610,22 +630,6 @@ a.nav-link:hover {
   background-position: top center;
   max-width: 1840px;
   margin: auto;
-}
-
-@media (min-width: 992px) {
-  .home .nos-formations__cards {
-    -webkit-column-count: 2;
-            column-count: 2;
-    height: 1410px;
-  }
-}
-
-@media (min-width: 1200px) {
-  .home .nos-formations__cards {
-    height: 1000px;
-    -webkit-column-count: 3;
-            column-count: 3;
-  }
 }
 
 .home .nos-formations__cards .c-card {
