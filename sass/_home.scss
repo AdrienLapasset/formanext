@@ -31,6 +31,7 @@
       width: fit-content;
       transition: color 0.5s;
       display: block;
+      display: flex;
       @include media-breakpoint-up(sm) {
         font-size: 18px;
       }
@@ -43,7 +44,6 @@
       &__text {
         text-decoration: underline;
         font-weight: 700;
-        display: inline-block;
       }
       &--red {
         color: $red;
@@ -63,8 +63,9 @@
       }
     }
     &__chevron-container {
-      width: 45px;
-      display: inline-block;
+      @include media-breakpoint-up(sm) {
+        width: 50px;
+      }
     }
     &__chevron {
       width: 20px;

@@ -175,10 +175,12 @@ a.nav-link:hover {
           align-items: center;
   border-radius: 45px;
   padding: 10px 30px;
-  -webkit-box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.3);
   font-size: 18px;
   text-align: center;
+  -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s;
+  transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
 }
 
 @media (min-width: 576px) {
@@ -187,12 +189,32 @@ a.nav-link:hover {
   }
 }
 
+.c-btn:hover {
+  -webkit-box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.3);
+          box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.3);
+  color: white;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .c-btn--red {
   background-color: #fe4040;
 }
 
+.c-btn--red:active, .c-btn--red:focus {
+  background-color: #b92c2c;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .c-btn--blue {
   background-color: #2ab7c0;
+}
+
+.c-btn--blue:active, .c-btn--blue:focus {
+  background-color: #1b757b;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .c-comment {
@@ -471,6 +493,9 @@ a.nav-link:hover {
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 @media (min-width: 576px) {
@@ -493,7 +518,6 @@ a.nav-link:hover {
 .home .je-me-forme__link__text {
   text-decoration: underline;
   font-weight: 700;
-  display: inline-block;
 }
 
 .home .je-me-forme__link--red {
@@ -516,9 +540,10 @@ a.nav-link:hover {
   fill: #1b757b;
 }
 
-.home .je-me-forme__chevron-container {
-  width: 45px;
-  display: inline-block;
+@media (min-width: 576px) {
+  .home .je-me-forme__chevron-container {
+    width: 50px;
+  }
 }
 
 .home .je-me-forme__chevron {
