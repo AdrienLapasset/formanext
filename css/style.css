@@ -464,21 +464,13 @@ a.nav-link:hover {
   margin-bottom: 30px;
 }
 
-.home .je-me-forme__chevron {
-  margin-right: 5px;
-  width: 20px;
-}
-
-@media (min-width: 576px) {
-  .home .je-me-forme__chevron {
-    width: 36px;
-  }
-}
-
 .home .je-me-forme__link {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
   display: block;
-  text-decoration: underline;
-  font-weight: 700;
 }
 
 @media (min-width: 576px) {
@@ -490,6 +482,56 @@ a.nav-link:hover {
 @media (min-width: 992px) {
   .home .je-me-forme__link {
     font-size: 25px;
+  }
+}
+
+.home .je-me-forme__link:hover .je-me-forme__chevron {
+  -webkit-transform: translateX(10px);
+          transform: translateX(10px);
+}
+
+.home .je-me-forme__link__text {
+  text-decoration: underline;
+  font-weight: 700;
+  display: inline-block;
+}
+
+.home .je-me-forme__link--red {
+  color: #fe4040;
+  fill: #fe4040;
+}
+
+.home .je-me-forme__link--red:hover {
+  color: #b92c2c;
+  fill: #b92c2c;
+}
+
+.home .je-me-forme__link--blue {
+  color: #2ab7c0;
+  fill: #2ab7c0;
+}
+
+.home .je-me-forme__link--blue:hover {
+  color: #1b757b;
+  fill: #1b757b;
+}
+
+.home .je-me-forme__chevron-container {
+  width: 45px;
+  display: inline-block;
+}
+
+.home .je-me-forme__chevron {
+  width: 20px;
+  -webkit-transition: fill 0.5s, -webkit-transform 0.5s;
+  transition: fill 0.5s, -webkit-transform 0.5s;
+  transition: transform 0.5s, fill 0.5s;
+  transition: transform 0.5s, fill 0.5s, -webkit-transform 0.5s;
+}
+
+@media (min-width: 576px) {
+  .home .je-me-forme__chevron {
+    width: 36px;
   }
 }
 
