@@ -98,6 +98,16 @@ a.nav-link:hover {
   max-width: 15px;
 }
 
+.c-tag--active {
+  color: white;
+  background-color: #fe4040;
+  border-color: #fe4040;
+}
+
+.c-tag--active .c-tag__icon {
+  fill: white;
+}
+
 .c-card {
   position: relative;
   width: 100%;

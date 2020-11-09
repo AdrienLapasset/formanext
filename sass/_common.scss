@@ -34,6 +34,14 @@
       max-width: 15px;
     }
   }
+  &--active {
+    color: white;
+    background-color: $red;
+    border-color: $red;
+    .c-tag__icon {
+      fill: white;
+    }
+  }
 }
 
 // CARDS
