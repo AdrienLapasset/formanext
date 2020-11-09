@@ -267,6 +267,13 @@ a.nav-link:hover {
 
 .header__contact {
   background-color: #2ab7c0;
+}
+
+.header__contact * {
+  color: white;
+}
+
+.header__contact *:hover {
   color: white;
 }
 

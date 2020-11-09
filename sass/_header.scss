@@ -5,7 +5,12 @@
   }
   &__contact {
     background-color: $blue;
-    color: white;
+    & * {
+      color: white;
+      &:hover {
+        color: white;
+      }
+    }
   }
   .navbar {
     .navbar-brand {
