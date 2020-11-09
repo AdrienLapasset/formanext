@@ -421,6 +421,7 @@ a.nav-link:hover {
 }
 
 .header .search__input {
+  border-radius: 0;
   height: 36px;
   border: 1px solid #fe4040;
   padding-right: 35px;
@@ -559,9 +560,6 @@ a.nav-link:hover {
 }
 
 .home .je-me-forme__link {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
   display: -webkit-box;
@@ -614,7 +612,9 @@ a.nav-link:hover {
 
 @media (min-width: 576px) {
   .home .je-me-forme__chevron-container {
-    width: 50px;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50px;
+            flex: 0 0 50px;
   }
 }
 
