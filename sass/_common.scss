@@ -35,11 +35,10 @@
     }
   }
   &--active {
-    color: white;
-    background-color: $red;
+    color: $red;
     border-color: $red;
     .c-tag__icon {
-      fill: white;
+      fill: $red;
     }
   }
 }

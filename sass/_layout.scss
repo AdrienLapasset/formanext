@@ -13,10 +13,22 @@
     }
   }
   .navbar {
+    .navbar-toggler {
+      border: none;
+    }
     .navbar-brand {
       width: 200px;
+      margin-right: 0;
       @include media-breakpoint-up(lg) {
         width: unset;
+      }
+    }
+    .navbar-collapse {
+      @include media-breakpoint-down(md) {
+        position: absolute;
+        background: white;
+        width: 100%;
+        top: 70px;
       }
     }
     .navbar-nav {
@@ -72,13 +84,16 @@
     &__form {
       display: none;
       position: absolute;
+      right: 0;
+      top: 0;
       @include media-breakpoint-up(lg) {
-        right: 0;
+        top: unset;
       }
     }
     &__input {
+      height: 36px;
       border: 1px solid $red;
-      padding: 6px 35px;
+      padding-right: 35px;
       text-align: right;
       color: black;
       font-size: 12px;
@@ -88,12 +103,12 @@
       }
     }
     ::placeholder {
-      color: $grey;
+      color: #6a6a6a;
     }
     &__clear {
       cursor: pointer;
       position: absolute;
-      top: 8px;
+      top: 11px;
       right: 10px;
     }
     &--active {

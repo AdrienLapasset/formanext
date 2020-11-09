@@ -100,13 +100,12 @@ a.nav-link:hover {
 }
 
 .c-tag--active {
-  color: white;
-  background-color: #fe4040;
+  color: #fe4040;
   border-color: #fe4040;
 }
 
 .c-tag--active .c-tag__icon {
-  fill: white;
+  fill: #fe4040;
 }
 
 .c-card {
@@ -307,13 +306,27 @@ a.nav-link:hover {
   color: white;
 }
 
+.header .navbar .navbar-toggler {
+  border: none;
+}
+
 .header .navbar .navbar-brand {
   width: 200px;
+  margin-right: 0;
 }
 
 @media (min-width: 992px) {
   .header .navbar .navbar-brand {
     width: unset;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .header .navbar .navbar-collapse {
+    position: absolute;
+    background: white;
+    width: 100%;
+    top: 70px;
   }
 }
 
@@ -397,17 +410,20 @@ a.nav-link:hover {
 .header .search__form {
   display: none;
   position: absolute;
+  right: 0;
+  top: 0;
 }
 
 @media (min-width: 992px) {
   .header .search__form {
-    right: 0;
+    top: unset;
   }
 }
 
 .header .search__input {
+  height: 36px;
   border: 1px solid #fe4040;
-  padding: 6px 35px;
+  padding-right: 35px;
   text-align: right;
   color: black;
   font-size: 12px;
@@ -421,25 +437,25 @@ a.nav-link:hover {
 }
 
 .header .search ::-webkit-input-placeholder {
-  color: #eef4f2;
+  color: #6a6a6a;
 }
 
 .header .search :-ms-input-placeholder {
-  color: #eef4f2;
+  color: #6a6a6a;
 }
 
 .header .search ::-ms-input-placeholder {
-  color: #eef4f2;
+  color: #6a6a6a;
 }
 
 .header .search ::placeholder {
-  color: #eef4f2;
+  color: #6a6a6a;
 }
 
 .header .search__clear {
   cursor: pointer;
   position: absolute;
-  top: 8px;
+  top: 11px;
   right: 10px;
 }
 
@@ -548,16 +564,10 @@ a.nav-link:hover {
   width: fit-content;
   -webkit-transition: color 0.5s;
   transition: color 0.5s;
-  display: block;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-}
-
-@media (min-width: 576px) {
-  .home .je-me-forme__link {
-    font-size: 18px;
-  }
+  font-size: 20px;
 }
 
 @media (min-width: 992px) {
@@ -596,6 +606,12 @@ a.nav-link:hover {
   fill: #1b757b;
 }
 
+.home .je-me-forme__chevron-container {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25px;
+          flex: 0 0 25px;
+}
+
 @media (min-width: 576px) {
   .home .je-me-forme__chevron-container {
     width: 50px;
@@ -616,12 +632,30 @@ a.nav-link:hover {
   }
 }
 
+.home .je-me-forme__img-container {
+  z-index: -1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .home .je-me-forme__img {
+  max-height: 200px;
   max-width: 100%;
+}
+
+@media (min-width: 768px) {
+  .home .je-me-forme__img {
+    max-height: 300px;
+  }
 }
 
 @media (min-width: 992px) {
   .home .je-me-forme__img {
+    max-height: unset;
     -webkit-transform: translateX(-30px);
             transform: translateX(-30px);
   }

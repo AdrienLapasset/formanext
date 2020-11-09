@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
   <title>Formanext</title>
   <meta name="description" content="">
+  <link rel="icon" type="image/png" href="/assets/imgs/favicon.png">
   <link rel="stylesheet" href="modules/bootstrap-4.5.3/dist/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -33,8 +34,24 @@
         <a class="navbar-brand" href="#">
           <img class="img-fluid" src="assets/logos/formanext.svg" alt="Logo Formanext">
         </a>
+
+        <!-- Search bar mobile -->
+        <div class="d-lg-none ml-auto">
+          <div class="search">
+            <button class="search__btn">
+              <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.63 43.63">
+                <path d="M21,3a17,17,0,0,0,0,34,16.79,16.79,0,0,0,9.09-2.66L42.38,46.62l4.24-4.24L34.5,30.28A17,17,0,0,0,21,3Zm0,4A13,13,0,1,1,8,20,13,13,0,0,1,21,7Z" transform="translate(-4 -3)" />
+              </svg>
+            </button>
+            <form class="search__form">
+              <input class="search__input" placeholder="Tapez un mot clé" />
+              <img class="search__clear" src="/assets/icons/clear-search-btn.png" alt="effacer">
+            </form>
+          </div>
+        </div>
+
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-c-tag="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+          <img src="/assets/icons/menu.svg" alt="">
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ml-auto">
@@ -65,8 +82,8 @@
               </a>
             </li>
 
-            <!-- Search bar -->
-            <li class="nav-item">
+            <!-- Search bar Desktop -->
+            <li class="nav-item d-none d-lg-block">
               <div class="search">
                 <button class="search__btn">
                   <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.63 43.63">
@@ -94,7 +111,7 @@
       <!-- Je me forme à mon nouveau métier -->
       <section class="je-me-forme">
         <div>
-          <h1 class="je-me-forme__heading">Je me forme<br>à mon nouveau<br>métier à domicile<br>et sans frais</h1>
+          <h1 class="je-me-forme__heading">Je me forme<br class="d-none d-lg-block"> à mon nouveau<br class="d-none d-lg-block"> métier à domicile<br class="d-none d-lg-block"> et sans frais</h1>
           <p class="je-me-forme__text">
             Les formations en ligne Formanext vous permettent de vous former à un métier porteur tout en bénéficiant d'un financement couvrant jusqu'à 100% les frais de votre reconversion
           </p>
@@ -115,8 +132,10 @@
             <p class="je-me-forme__link__text">Choisir ma formation</p>
           </a>
         </div>
-        <div style="z-index: -1">
-          <img class="je-me-forme__img" src="assets/imgs/je-me-forme.jpg" alt="Je me forme à mon nouveau métier à domicile et sans frais">
+        <div class="je-me-forme__img-container">
+          <div>
+            <img class="je-me-forme__img" src="assets/imgs/je-me-forme.jpg" alt="Je me forme à mon nouveau métier à domicile et sans frais">
+          </div>
         </div>
       </section>
 
