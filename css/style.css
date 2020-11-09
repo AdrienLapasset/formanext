@@ -467,7 +467,15 @@ a.nav-link:hover {
   color: white;
 }
 
+.footer__link:hover {
+  color: white;
+}
+
 .footer__link--red {
+  color: #fe4040;
+}
+
+.footer__link--red:hover {
   color: #fe4040;
 }
 
@@ -830,7 +838,6 @@ a.nav-link:hover {
 }
 
 .home .nos-gages {
-  margin-top: 40px;
   padding: 40px 0;
   background-color: #eef4f2;
 }

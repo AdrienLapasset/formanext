@@ -119,8 +119,14 @@
     font-size: 20px;
     font-weight: 700;
     color: white;
+    &:hover {
+      color: white;
+    }
     &--red {
       color: $red;
+      &:hover {
+        color: $red;
+      }
     }
   }
 }
