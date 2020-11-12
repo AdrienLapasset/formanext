@@ -17,8 +17,11 @@
       border: none;
     }
     .navbar-brand {
-      width: 200px;
+      width: calc(50vw - 15px);
       margin-right: 0;
+      @include media-breakpoint-up(sm) {
+        width: 200px;
+      }
       @include media-breakpoint-up(lg) {
         width: unset;
       }
@@ -84,13 +87,15 @@
     &__form {
       display: none;
       position: absolute;
-      right: 0;
+      right: -48px;
       top: 0;
       @include media-breakpoint-up(lg) {
+        right: 0;
         top: unset;
       }
     }
     &__input {
+      width: calc(50vw - 15px);
       border-radius: 0;
       height: 36px;
       border: 1px solid $red;
@@ -99,7 +104,10 @@
       color: black;
       font-size: 12px;
       outline: none;
-      @include media-breakpoint-up(lg) {
+      @include media-breakpoint-up(sm) {
+        width: 300px;
+      }
+      @include media-breakpoint-up(md) {
         width: 400px;
       }
     }
@@ -152,6 +160,12 @@
       margin-right: 10px;
       position: relative;
       top: -2px;
+    }
+    &__link {
+      color: white;
+      &:hover {
+        color: white;
+      }
     }
   }
 }

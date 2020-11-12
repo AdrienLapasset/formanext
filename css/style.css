@@ -82,6 +82,29 @@ a.nav-link:hover {
   margin-bottom: 0.5rem;
 }
 
+.c-tag:hover {
+  color: white;
+}
+
+.c-tag:hover:not(.c-tag--active) {
+  color: #fe4040;
+  border-color: #fe4040;
+}
+
+.c-tag:hover:not(.c-tag--active) .c-tag__icon {
+  fill: #fe4040;
+}
+
+.c-tag--active {
+  background-color: #fe4040;
+  border-color: #fe4040;
+  color: white;
+}
+
+.c-tag--active .c-tag__icon {
+  fill: #fff;
+}
+
 .c-tag__icon {
   max-height: 20px;
   max-width: 20px;
@@ -97,15 +120,6 @@ a.nav-link:hover {
 .c-tag--grey .c-tag__icon {
   max-height: 15px;
   max-width: 15px;
-}
-
-.c-tag--active {
-  color: #fe4040;
-  border-color: #fe4040;
-}
-
-.c-tag--active .c-tag__icon {
-  fill: #fe4040;
 }
 
 .c-card {
@@ -311,8 +325,14 @@ a.nav-link:hover {
 }
 
 .header .navbar .navbar-brand {
-  width: 200px;
+  width: calc(50vw - 15px);
   margin-right: 0;
+}
+
+@media (min-width: 576px) {
+  .header .navbar .navbar-brand {
+    width: 200px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -410,17 +430,19 @@ a.nav-link:hover {
 .header .search__form {
   display: none;
   position: absolute;
-  right: 0;
+  right: -48px;
   top: 0;
 }
 
 @media (min-width: 992px) {
   .header .search__form {
+    right: 0;
     top: unset;
   }
 }
 
 .header .search__input {
+  width: calc(50vw - 15px);
   border-radius: 0;
   height: 36px;
   border: 1px solid #fe4040;
@@ -431,7 +453,13 @@ a.nav-link:hover {
   outline: none;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 576px) {
+  .header .search__input {
+    width: 300px;
+  }
+}
+
+@media (min-width: 768px) {
   .header .search__input {
     width: 400px;
   }
@@ -505,6 +533,14 @@ a.nav-link:hover {
   margin-right: 10px;
   position: relative;
   top: -2px;
+}
+
+.footer__adress__link {
+  color: white;
+}
+
+.footer__adress__link:hover {
+  color: white;
 }
 
 .home .je-me-forme {
@@ -662,12 +698,14 @@ a.nav-link:hover {
 }
 
 .home .nos-formations {
+  margin-top: -70px;
   padding: 180px 0;
 }
 
 @media (min-width: 576px) {
   .home .nos-formations {
     padding: 150px 0;
+    margin-top: unset;
   }
 }
 
