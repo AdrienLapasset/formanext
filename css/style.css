@@ -320,8 +320,14 @@ a.nav-link:hover {
   color: white;
 }
 
+.header .navbar {
+  position: unset;
+}
+
 .header .navbar .navbar-toggler {
   border: none;
+  padding: 0;
+  margin-left: 15px;
 }
 
 .header .navbar .navbar-brand {
@@ -344,9 +350,13 @@ a.nav-link:hover {
 @media (max-width: 991.98px) {
   .header .navbar .navbar-collapse {
     position: absolute;
-    background: white;
+    background-color: #eef4f2;
+    top: 100px;
+    left: 0;
     width: 100%;
-    top: 70px;
+    padding: 0.5rem 0;
+    -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.15);
+            box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.15);
   }
 }
 
@@ -357,6 +367,9 @@ a.nav-link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header .navbar .navbar-nav .nav-item .nav-link {

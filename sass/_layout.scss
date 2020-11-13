@@ -13,8 +13,11 @@
     }
   }
   .navbar {
+    position: unset;
     .navbar-toggler {
       border: none;
+      padding: 0;
+      margin-left: 15px;
     }
     .navbar-brand {
       width: calc(50vw - 15px);
@@ -29,15 +32,19 @@
     .navbar-collapse {
       @include media-breakpoint-down(md) {
         position: absolute;
-        background: white;
+        background-color: $grey;
+        top: 100px;
+        left: 0;
         width: 100%;
-        top: 70px;
+        padding: 0.5rem 0;
+        box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.15);
       }
     }
     .navbar-nav {
       .nav-item {
         display: flex;
         align-items: center;
+        justify-content: flex-end;
         .nav-link {
           color: black;
           display: flex;
