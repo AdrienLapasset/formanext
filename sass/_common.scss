@@ -2,11 +2,19 @@
 
 // HEADINGS
 .c-heading {
-  font-size: 24px;
   font-weight: 700;
-  text-align: center;
-  @include media-breakpoint-up(lg) {
+  &--1 {
     font-size: 35px;
+    @include media-breakpoint-up(lg) {
+      font-size: 55px;
+    }
+  }
+  &--2 {
+    font-size: 24px;
+    text-align: center;
+    @include media-breakpoint-up(lg) {
+      font-size: 35px;
+    }
   }
 }
 
@@ -20,13 +28,15 @@
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
-  &:hover {
-    color: white;
-    &:not(.c-tag--active) {
-      color: $red;
-      border-color: $red;
-      .c-tag__icon {
-        fill: $red;
+  &.btn {
+    &:hover {
+      color: white;
+      &:not(.c-tag--active) {
+        color: $red;
+        border-color: $red;
+        .c-tag__icon {
+          fill: $red;
+        }
       }
     }
   }

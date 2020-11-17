@@ -56,13 +56,26 @@ a.nav-link:hover {
 }
 
 .c-heading {
-  font-size: 24px;
   font-weight: 700;
+}
+
+.c-heading--1 {
+  font-size: 35px;
+}
+
+@media (min-width: 992px) {
+  .c-heading--1 {
+    font-size: 55px;
+  }
+}
+
+.c-heading--2 {
+  font-size: 24px;
   text-align: center;
 }
 
 @media (min-width: 992px) {
-  .c-heading {
+  .c-heading--2 {
     font-size: 35px;
   }
 }
@@ -82,16 +95,16 @@ a.nav-link:hover {
   margin-bottom: 0.5rem;
 }
 
-.c-tag:hover {
+.c-tag.btn:hover {
   color: white;
 }
 
-.c-tag:hover:not(.c-tag--active) {
+.c-tag.btn:hover:not(.c-tag--active) {
   color: #fe4040;
   border-color: #fe4040;
 }
 
-.c-tag:hover:not(.c-tag--active) .c-tag__icon {
+.c-tag.btn:hover:not(.c-tag--active) .c-tag__icon {
   fill: #fe4040;
 }
 
@@ -591,14 +604,11 @@ a.nav-link:hover {
 }
 
 .home .je-me-forme__heading {
-  font-size: 35px;
-  font-weight: 700;
   margin: 20px 0 20px;
 }
 
 @media (min-width: 992px) {
   .home .je-me-forme__heading {
-    font-size: 55px;
     margin: 60px 0 20px;
   }
 }
@@ -943,5 +953,9 @@ a.nav-link:hover {
   max-width: 180px;
   max-height: 100px;
   margin: 0 auto 20px;
+}
+
+.metiers .hero__devenez {
+  font-size: 32px;
 }
 /*# sourceMappingURL=style.css.map */
