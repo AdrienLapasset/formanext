@@ -31,12 +31,12 @@
     }
     .navbar-collapse {
       @include media-breakpoint-down(md) {
+        z-index: 1;
         position: absolute;
         background-color: $grey;
         top: 100px;
         left: 0;
         width: 100%;
-        padding: 0.5rem 0;
         box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.15);
       }
     }

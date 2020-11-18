@@ -20,7 +20,13 @@
 }
 
 *,
-p {
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
   padding: 0;
 }
@@ -71,7 +77,6 @@ a.nav-link:hover {
 
 .c-heading--2 {
   font-size: 24px;
-  text-align: center;
 }
 
 @media (min-width: 992px) {
@@ -362,12 +367,12 @@ a.nav-link:hover {
 
 @media (max-width: 991.98px) {
   .header .navbar .navbar-collapse {
+    z-index: 1;
     position: absolute;
     background-color: #eef4f2;
     top: 100px;
     left: 0;
     width: 100%;
-    padding: 0.5rem 0;
     -webkit-box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.15);
             box-shadow: 0px 15px 20px 0px rgba(0, 0, 0, 0.15);
   }
@@ -567,6 +572,10 @@ a.nav-link:hover {
 
 .footer__adress__link:hover {
   color: white;
+}
+
+.home .c-heading--2 {
+  text-align: center;
 }
 
 .home .je-me-forme {
@@ -955,7 +964,114 @@ a.nav-link:hover {
   margin: 0 auto 20px;
 }
 
+@media (min-width: 992px) {
+  .metiers .c-heading--2 {
+    font-size: 30px;
+  }
+}
+
 .metiers .hero__devenez {
   font-size: 32px;
+}
+
+.metiers .hero__text {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.metiers .marche-emploi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  background-color: #eef4f2;
+  padding: 20px 40px;
+  margin: 40px 0;
+}
+
+@media (min-width: 992px) {
+  .metiers .marche-emploi {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 20px -60px 40px;
+  }
+}
+
+.metiers .marche-emploi__info-container {
+  padding-left: 20px;
+  border-left: 2px solid #fe4040;
+  margin-bottom: 30px;
+}
+
+@media (min-width: 992px) {
+  .metiers .marche-emploi__info-container {
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
+}
+
+.metiers .marche-emploi__number {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.metiers .marche-emploi__text {
+  font-size: 16px;
+}
+
+.metiers .mes-missions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.metiers .mes-missions > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.metiers .mes-missions__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.metiers .mes-missions__list-icon {
+  margin-right: 15px;
+}
+
+.metiers .mes-missions .remuneration {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fe4040;
+  padding: 0 10px;
+  background-color: white;
+  margin-top: 10px;
+}
+
+.metiers .mes-missions .remuneration__type {
+  text-transform: uppercase;
+  width: 100px;
+}
+
+.metiers .mes-missions .remuneration__number {
+  font-size: 35px;
 }
 /*# sourceMappingURL=style.css.map */
