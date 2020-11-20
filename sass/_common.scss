@@ -15,6 +15,11 @@
       font-size: 35px;
     }
   }
+  &__emoji {
+    font-size: 40px;
+    position: relative;
+    top: 5px;
+  }
 }
 
 // TAGS
@@ -64,6 +69,9 @@
       max-width: 15px;
     }
   }
+  &--small {
+    font-size: 9px;
+  }
 }
 
 // CARDS
@@ -72,14 +80,24 @@
   box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.5s;
   margin-bottom: 40px;
+  padding: 30px;
   @include media-breakpoint-up(md) {
     margin-bottom: 30px;
   }
   @include media-breakpoint-up(xl) {
     margin-bottom: 0;
   }
+  .c-tag {
+    margin-bottom: 20px;
+  }
+  &__heading {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
 }
 
+// CARDS TRIANGLE
 .c-card-triangle {
   display: block;
   position: relative;

@@ -23,6 +23,10 @@
   color: white;
 }
 
+.green {
+  color: #2e995a;
+}
+
 *,
 p,
 h1,
@@ -89,6 +93,12 @@ a.nav-link:hover {
   }
 }
 
+.c-heading__emoji {
+  font-size: 40px;
+  position: relative;
+  top: 5px;
+}
+
 .c-tag {
   border: 1px solid black;
   border-radius: 0;
@@ -141,13 +151,17 @@ a.nav-link:hover {
 
 .c-tag--grey {
   font-size: 9px;
-  color: #7f7f7f;
-  border-color: #7f7f7f;
+  color: #635a5a;
+  border-color: #635a5a;
 }
 
 .c-tag--grey .c-tag__icon {
   max-height: 15px;
   max-width: 15px;
+}
+
+.c-tag--small {
+  font-size: 9px;
 }
 
 .c-card {
@@ -159,6 +173,7 @@ a.nav-link:hover {
   transition: box-shadow 0.5s;
   transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
   margin-bottom: 40px;
+  padding: 30px;
 }
 
 @media (min-width: 768px) {
@@ -171,6 +186,16 @@ a.nav-link:hover {
   .c-card {
     margin-bottom: 0;
   }
+}
+
+.c-card .c-tag {
+  margin-bottom: 20px;
+}
+
+.c-card__heading {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
 }
 
 .c-card-triangle {
@@ -1334,6 +1359,10 @@ a.nav-link:hover {
   padding: 50px 0;
 }
 
+.metiers .mon-parcours__card {
+  padding: 0;
+}
+
 .metiers .mon-parcours__card .c-tag {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
@@ -1412,5 +1441,23 @@ a.nav-link:hover {
   .metiers .mon-parcours__quote {
     height: 150px;
   }
+}
+
+.metiers .coup-de-boost {
+  margin: 40px 0;
+  padding: 40px 0;
+}
+
+.metiers .coup-de-boost .c-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 /*# sourceMappingURL=style.css.map */

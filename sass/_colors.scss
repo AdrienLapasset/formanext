@@ -3,7 +3,8 @@ $red-dark: #b92c2c;
 $blue: #2ab7c0;
 $blue-dark: #1b757b;
 $grey: #eef4f2;
-$grey-dark: #7f7f7f;
+$grey-dark: #635a5a;
+$green: #2e995a;
 
 .red {
   color: $red;
@@ -23,4 +24,7 @@ $grey-dark: #7f7f7f;
 }
 .white {
   color: white;
+}
+.green {
+  color: $green;
 }
