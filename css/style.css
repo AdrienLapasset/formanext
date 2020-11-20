@@ -164,16 +164,19 @@ a.nav-link:hover {
   font-size: 9px;
 }
 
-.c-card {
-  background-color: white;
+.c-card, .c-card:hover, .c-card-triangle:not(.c-card-triangle--no-hover):hover > .c-card-triangle__content, .c-card-triangle__content, .metiers .hero__img {
   -webkit-box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
-  -webkit-transition: -webkit-box-shadow 0.5s;
-  transition: -webkit-box-shadow 0.5s;
-  transition: box-shadow 0.5s;
-  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+}
+
+.c-card {
+  background-color: white;
   margin-bottom: 40px;
   padding: 20px;
+  -webkit-transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  transition: -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s;
+  transition: transform 0.5s, box-shadow 0.5s, -webkit-transform 0.5s, -webkit-box-shadow 0.5s;
 }
 
 @media (min-width: 768px) {
@@ -186,6 +189,11 @@ a.nav-link:hover {
   .c-card {
     margin-bottom: 0;
   }
+}
+
+.c-card:hover {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
 }
 
 .c-card .c-tag {
@@ -215,14 +223,9 @@ a.nav-link:hover {
   }
 }
 
-.c-card-triangle:hover {
+.c-card-triangle:not(.c-card-triangle--no-hover):hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
-}
-
-.c-card-triangle:hover > .c-card-triangle__content {
-  -webkit-box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.3);
 }
 
 .c-card-triangle__bg {
@@ -247,8 +250,6 @@ a.nav-link:hover {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  -webkit-box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
-          box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
   -webkit-transition: -webkit-box-shadow 0.5s;
   transition: -webkit-box-shadow 0.5s;
   transition: box-shadow 0.5s;
@@ -1035,6 +1036,10 @@ a.nav-link:hover {
 .metiers .hero__text {
   font-size: 18px;
   margin-bottom: 30px;
+}
+
+.metiers .hero__img {
+  max-width: 100%;
 }
 
 .metiers .marche-emploi {
