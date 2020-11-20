@@ -118,6 +118,81 @@
     }
   }
 
+  .mes-opportunitees {
+    display: flex;
+    flex-direction: column;
+    background-color: $grey;
+    padding: 40px;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 40px 0;
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      margin: 20px -60px 40px;
+    }
+    & > * {
+      flex: 0 0 auto;
+    }
+    &__block {
+      background-color: $red;
+      color: white;
+      padding: 10px 20px;
+      font-weight: 700;
+      font-size: 25px;
+      z-index: 1;
+    }
+    &__block-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      @include media-breakpoint-up(sm) {
+        flex-direction: row;
+        align-items: flex-start;
+      }
+      @include media-breakpoint-up(lg) {
+        flex-direction: column;
+      }
+      .mes-opportunitees__block {
+        font-size: 14px;
+        @include media-breakpoint-up(xl) {
+          font-size: 25px;
+        }
+        &:not(:last-child) {
+          margin-bottom: 10px;
+          @include media-breakpoint-up(sm) {
+            margin-bottom: 0;
+            margin-right: 5px;
+          }
+          @include media-breakpoint-up(lg) {
+            margin-bottom: 40px;
+          }
+          @include media-breakpoint-up(xl) {
+            margin-bottom: 23px;
+          }
+        }
+      }
+    }
+    &__lines {
+      transform: rotate(90deg);
+      display: none;
+      @include media-breakpoint-up(sm) {
+        margin: -70px 0;
+        display: block;
+        width: 200px;
+      }
+      @include media-breakpoint-up(md) {
+        margin: -90px 0;
+        width: 260px;
+      }
+      @include media-breakpoint-up(lg) {
+        width: auto;
+        transform: none;
+        margin: 0 -3px 0 -10px;
+      }
+    }
+  }
+
   .mon-parcours {
     background-color: $blue;
     padding: 50px 0;
