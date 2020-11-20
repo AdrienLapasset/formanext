@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700;1,700&display=swap");
 .red {
   color: #fe4040;
   fill: #fe4040;
@@ -17,6 +17,10 @@
 .blue:hover {
   color: #2ab7c0;
   fill: #2ab7c0;
+}
+
+.white {
+  color: white;
 }
 
 *,
@@ -100,6 +104,12 @@ a.nav-link:hover {
   margin-bottom: 0.5rem;
 }
 
+.c-tag > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
 .c-tag.btn:hover {
   color: white;
 }
@@ -141,6 +151,29 @@ a.nav-link:hover {
 }
 
 .c-card {
+  background-color: white;
+  -webkit-box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transition: -webkit-box-shadow 0.5s;
+  transition: -webkit-box-shadow 0.5s;
+  transition: box-shadow 0.5s;
+  transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
+  margin-bottom: 40px;
+}
+
+@media (min-width: 768px) {
+  .c-card {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .c-card {
+    margin-bottom: 0;
+  }
+}
+
+.c-card-triangle {
   display: block;
   position: relative;
   width: 100%;
@@ -152,22 +185,22 @@ a.nav-link:hover {
 }
 
 @media (min-width: 576px) {
-  .c-card {
+  .c-card-triangle {
     width: 360px;
   }
 }
 
-.c-card:hover {
+.c-card-triangle:hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
 
-.c-card:hover > .c-card__content {
+.c-card-triangle:hover > .c-card-triangle__content {
   -webkit-box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.3);
           box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.3);
 }
 
-.c-card__bg {
+.c-card-triangle__bg {
   position: absolute;
   width: 100%;
   height: calc(100% - 30px);
@@ -175,7 +208,7 @@ a.nav-link:hover {
   top: 30px;
 }
 
-.c-card__content {
+.c-card-triangle__content {
   position: relative;
   background-color: white;
   padding: 30px;
@@ -197,27 +230,27 @@ a.nav-link:hover {
   transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
 }
 
-.c-card .c-tag {
+.c-card-triangle .c-tag {
   margin-bottom: 20px;
 }
 
-.c-card__heading {
+.c-card-triangle__heading {
   font-size: 24px;
   font-weight: 700;
 }
 
 @media (min-width: 992px) {
-  .c-card__heading {
+  .c-card-triangle__heading {
     font-size: 28px;
   }
 }
 
-.c-card__heading--large {
+.c-card-triangle__heading--large {
   font-size: 24px;
 }
 
 @media (min-width: 992px) {
-  .c-card__heading--large {
+  .c-card-triangle__heading--large {
     font-size: 35px;
   }
 }
@@ -755,12 +788,12 @@ a.nav-link:hover {
   margin: auto;
 }
 
-.home .nos-formations__cards .c-card {
+.home .nos-formations__cards .c-card-triangle {
   margin: 0 auto 40px;
 }
 
 @media (min-width: 992px) {
-  .home .nos-formations__cards .c-card {
+  .home .nos-formations__cards .c-card-triangle {
     display: inline-block;
     margin-left: 50px;
   }
@@ -794,8 +827,8 @@ a.nav-link:hover {
   }
 }
 
-.home .notre-priorite .c-card,
-.home .financer-a-100 .c-card {
+.home .notre-priorite .c-card-triangle,
+.home .financer-a-100 .c-card-triangle {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -803,8 +836,8 @@ a.nav-link:hover {
 }
 
 @media (min-width: 992px) {
-  .home .notre-priorite .c-card,
-  .home .financer-a-100 .c-card {
+  .home .notre-priorite .c-card-triangle,
+  .home .financer-a-100 .c-card-triangle {
     margin-bottom: 0;
     -webkit-transform: translate(80px, 50px);
             transform: translate(80px, 50px);
@@ -814,8 +847,8 @@ a.nav-link:hover {
   }
 }
 
-.home .notre-priorite .c-card__content,
-.home .financer-a-100 .c-card__content {
+.home .notre-priorite .c-card-triangle__content,
+.home .financer-a-100 .c-card-triangle__content {
   padding: 40px;
 }
 
@@ -900,12 +933,12 @@ a.nav-link:hover {
   background-color: #2ab7c0;
 }
 
-.home .financer-a-100 .c-card {
+.home .financer-a-100 .c-card-triangle {
   margin-top: 40px;
 }
 
 @media (min-width: 992px) {
-  .home .financer-a-100 .c-card {
+  .home .financer-a-100 .c-card-triangle {
     margin-top: 0;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 420px;
@@ -915,7 +948,7 @@ a.nav-link:hover {
   }
 }
 
-.home .financer-a-100 .c-card__content {
+.home .financer-a-100 .c-card-triangle__content {
   padding: 60px 40px;
 }
 
@@ -1073,5 +1106,90 @@ a.nav-link:hover {
 
 .metiers .mes-missions .remuneration__number {
   font-size: 35px;
+}
+
+.metiers .mon-parcours {
+  background-color: #2ab7c0;
+  padding: 50px;
+}
+
+.metiers .mon-parcours__card .c-tag {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.metiers .mon-parcours__card--blue .mon-parcours__heading {
+  color: #2ab7c0;
+}
+
+.metiers .mon-parcours__card--blue .mon-parcours__aside {
+  background-color: #2ab7c0;
+}
+
+.metiers .mon-parcours__card--blue-dark .mon-parcours__heading {
+  color: #2a90c0;
+}
+
+.metiers .mon-parcours__card--blue-dark .mon-parcours__aside {
+  background-color: #2a90c0;
+}
+
+.metiers .mon-parcours__card--blue-darker .mon-parcours__heading {
+  color: #104c85;
+}
+
+.metiers .mon-parcours__card--blue-darker .mon-parcours__aside {
+  background-color: #104c85;
+}
+
+.metiers .mon-parcours__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.metiers .mon-parcours__heading {
+  font-weight: 700;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.metiers .mon-parcours__aside {
+  width: 100%;
+  color: white;
+  padding: 20px;
+  font-size: 23px;
+  font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 992px) {
+  .metiers .mon-parcours__aside {
+    height: 150px;
+  }
+}
+
+.metiers .mon-parcours__quote {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .metiers .mon-parcours__quote {
+    height: 150px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -27,6 +27,9 @@
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
+  & > * {
+    flex: 0 0 auto;
+  }
   &.btn {
     &:hover {
       color: white;
@@ -65,6 +68,19 @@
 
 // CARDS
 .c-card {
+  background-color: white;
+  box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 0.5s;
+  margin-bottom: 40px;
+  @include media-breakpoint-up(md) {
+    margin-bottom: 30px;
+  }
+  @include media-breakpoint-up(xl) {
+    margin-bottom: 0;
+  }
+}
+
+.c-card-triangle {
   display: block;
   position: relative;
   width: 100%;
@@ -75,7 +91,7 @@
   }
   &:hover {
     transform: translateY(-5px);
-    & > .c-card__content {
+    & > .c-card-triangle__content {
       box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.3);
     }
   }

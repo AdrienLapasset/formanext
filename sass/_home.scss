@@ -110,7 +110,7 @@
       margin: auto;
     }
     &__cards {
-      .c-card {
+      .c-card-triangle {
         margin: 0 auto 40px;
         @include media-breakpoint-up(lg) {
           display: inline-block;
@@ -130,7 +130,7 @@
       flex-direction: row;
       align-items: start;
     }
-    .c-card {
+    .c-card-triangle {
       height: fit-content;
       margin-bottom: -10px;
       @include media-breakpoint-up(lg) {
@@ -184,7 +184,7 @@
     &__number {
       background-color: $blue;
     }
-    .c-card {
+    .c-card-triangle {
       margin-top: 40px;
       @include media-breakpoint-up(lg) {
         margin-top: 0;

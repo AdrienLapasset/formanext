@@ -74,4 +74,75 @@
       }
     }
   }
+
+  .mon-parcours {
+    background-color: $blue;
+    padding: 50px;
+    &__card {
+      .c-tag {
+        flex: 1 1 auto;
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      &--blue {
+        .mon-parcours {
+          &__heading {
+            color: $blue;
+          }
+          &__aside {
+            background-color: $blue;
+          }
+        }
+      }
+      &--blue-dark {
+        .mon-parcours {
+          &__heading {
+            color: #2a90c0;
+          }
+          &__aside {
+            background-color: #2a90c0;
+          }
+        }
+      }
+      &--blue-darker {
+        .mon-parcours {
+          &__heading {
+            color: #104c85;
+          }
+          &__aside {
+            background-color: #104c85;
+          }
+        }
+      }
+    }
+    &__header {
+      display: flex;
+      height: 50px;
+      align-items: flex-start;
+    }
+    &__heading {
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    &__aside {
+      width: 100%;
+      color: white;
+      padding: 20px;
+      font-size: 23px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      @include media-breakpoint-up(lg) {
+        height: 150px;
+      }
+    }
+    &__quote {
+      font-size: 20px;
+      font-style: italic;
+      text-align: center;
+      @include media-breakpoint-up(lg) {
+        height: 150px;
+      }
+    }
+  }
 }
