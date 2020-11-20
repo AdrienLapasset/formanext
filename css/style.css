@@ -84,7 +84,7 @@ a.nav-link:hover {
 }
 
 .c-heading--2 {
-  font-size: 20px;
+  font-size: 24px;
 }
 
 @media (min-width: 992px) {
@@ -173,7 +173,7 @@ a.nav-link:hover {
   transition: box-shadow 0.5s;
   transition: box-shadow 0.5s, -webkit-box-shadow 0.5s;
   margin-bottom: 40px;
-  padding: 30px;
+  padding: 20px;
 }
 
 @media (min-width: 768px) {
@@ -189,7 +189,7 @@ a.nav-link:hover {
 }
 
 .c-card .c-tag {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .c-card__heading {
@@ -292,15 +292,9 @@ a.nav-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   border-radius: 45px;
   padding: 10px 30px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
   transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
@@ -344,7 +338,7 @@ a.nav-link:hover {
 
 .c-comment {
   position: relative;
-  margin: 60px auto 0;
+  margin: 0 auto;
   max-width: 380px;
 }
 
@@ -1431,6 +1425,12 @@ a.nav-link:hover {
   }
 }
 
+.metiers .mon-parcours__icon {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 60px;
+          flex: 0 0 60px;
+}
+
 .metiers .mon-parcours__quote {
   font-size: 20px;
   font-style: italic;
@@ -1443,9 +1443,15 @@ a.nav-link:hover {
   }
 }
 
+.metiers .mon-parcours__icon-time {
+  width: 12px;
+  margin-right: 5px;
+}
+
 .metiers .coup-de-boost {
   margin: 40px 0;
   padding: 40px 0;
+  background-color: #eef4f2;
 }
 
 .metiers .coup-de-boost .c-card {

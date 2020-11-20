@@ -10,7 +10,7 @@
     }
   }
   &--2 {
-    font-size: 20px;
+    font-size: 24px;
     @include media-breakpoint-up(lg) {
       font-size: 35px;
     }
@@ -80,7 +80,7 @@
   box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
   transition: box-shadow 0.5s;
   margin-bottom: 40px;
-  padding: 30px;
+  padding: 20px;
   @include media-breakpoint-up(md) {
     margin-bottom: 30px;
   }
@@ -88,7 +88,7 @@
     margin-bottom: 0;
   }
   .c-tag {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   &__heading {
     font-size: 22px;
@@ -156,11 +156,9 @@
   color: white;
   font-weight: 700;
   display: flex;
-  justify-content: center;
-  align-items: center;
   border-radius: 45px;
   padding: 10px 30px;
-  font-size: 18px;
+  font-size: 16px;
   text-align: center;
   transition: box-shadow 0.5s, transform 0.5s;
   @include media-breakpoint-up(sm) {
@@ -192,7 +190,7 @@
 // COMMENTS
 .c-comment {
   position: relative;
-  margin: 60px auto 0;
+  margin: 0 auto;
   max-width: 380px;
   @include media-breakpoint-up(lg) {
     margin: 0;
