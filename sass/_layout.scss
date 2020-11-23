@@ -144,12 +144,21 @@
 .footer {
   padding: 40px 0 100px;
   background-color: black;
+  &__logo {
+    width: 230px;
+    @include media-breakpoint-up(lg) {
+      width: auto;
+    }
+  }
   &__link {
     margin-bottom: 10px;
     display: block;
-    font-size: 20px;
     font-weight: 700;
     color: white;
+    font-size: 16px;
+    @include media-breakpoint-up(lg) {
+      font-size: 20px;
+    }
     &:hover {
       color: white;
     }
@@ -162,7 +171,10 @@
   }
   &__adress {
     color: white;
-    font-size: 18px;
+    font-size: 16px;
+    @include media-breakpoint-up(lg) {
+      font-size: 18px;
+    }
     &__icon {
       margin-right: 10px;
       position: relative;

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,700;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400;1,700&display=swap");
 .red {
   color: #fe4040;
   fill: #fe4040;
@@ -112,6 +112,9 @@ a.nav-link:hover {
       -ms-flex-align: center;
           align-items: center;
   margin-bottom: 0.5rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 .c-tag > * {
@@ -145,7 +148,7 @@ a.nav-link:hover {
 
 .c-tag__icon {
   max-height: 20px;
-  max-width: 20px;
+  width: 20px;
   margin-right: 5px;
 }
 
@@ -340,11 +343,12 @@ a.nav-link:hover {
 .c-comment {
   position: relative;
   margin: 0 auto;
-  max-width: 380px;
+  max-width: 310px;
 }
 
 @media (min-width: 992px) {
   .c-comment {
+    max-width: 380px;
     margin: 0;
     max-width: unset;
   }
@@ -358,15 +362,22 @@ a.nav-link:hover {
       -ms-flex-align: center;
           align-items: center;
   color: #fe4040;
-  font-size: 25px;
+  font-size: 19px;
   font-weight: 700;
   font-style: italic;
-  min-height: 270px;
+  min-height: 145px;
 }
 
 .c-comment__text::before {
   content: url("/assets/imgs/comment-bg.png");
   position: absolute;
+}
+
+@media (min-width: 992px) {
+  .c-comment__text {
+    min-height: 270px;
+    font-size: 25px;
+  }
 }
 
 .c-comment__person {
@@ -594,12 +605,28 @@ a.nav-link:hover {
   background-color: black;
 }
 
+.footer__logo {
+  width: 230px;
+}
+
+@media (min-width: 992px) {
+  .footer__logo {
+    width: auto;
+  }
+}
+
 .footer__link {
   margin-bottom: 10px;
   display: block;
-  font-size: 20px;
   font-weight: 700;
   color: white;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .footer__link {
+    font-size: 20px;
+  }
 }
 
 .footer__link:hover {
@@ -616,7 +643,13 @@ a.nav-link:hover {
 
 .footer__adress {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
+}
+
+@media (min-width: 992px) {
+  .footer__adress {
+    font-size: 18px;
+  }
 }
 
 .footer__adress__icon {
@@ -1038,7 +1071,14 @@ a.nav-link:hover {
   margin-bottom: 30px;
 }
 
+@media (min-width: 576px) {
+  .metiers .hero .c-card-triangle {
+    width: auto;
+  }
+}
+
 .metiers .hero__img {
+  position: relative;
   max-width: 100%;
 }
 
@@ -1121,6 +1161,12 @@ a.nav-link:hover {
 
 .metiers .mes-missions .c-card-triangle {
   margin-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .metiers .mes-missions .c-card-triangle {
+    width: 580px;
+  }
 }
 
 .metiers .mes-missions > * {
@@ -1257,27 +1303,26 @@ a.nav-link:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-top: 20px;
 }
 
 @media (min-width: 576px) {
   .metiers .mes-opportunitees__block-container {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding-top: 0;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
   }
 }
 
@@ -1291,7 +1336,31 @@ a.nav-link:hover {
 }
 
 .metiers .mes-opportunitees__block-container .mes-opportunitees__block {
-  font-size: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 13px;
+}
+
+@media (min-width: 576px) {
+  .metiers .mes-opportunitees__block-container .mes-opportunitees__block {
+    min-height: 58px;
+  }
+}
+
+@media (min-width: 768px) {
+  .metiers .mes-opportunitees__block-container .mes-opportunitees__block {
+    min-height: unset;
+  }
+}
+
+@media (min-width: 992px) {
+  .metiers .mes-opportunitees__block-container .mes-opportunitees__block {
+    font-size: 14px;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -1353,6 +1422,20 @@ a.nav-link:hover {
   }
 }
 
+.metiers .mes-opportunitees__lines-mobile {
+  margin-right: -5px;
+  margin-bottom: 20px;
+  height: 220px;
+  position: relative;
+  top: -32px;
+}
+
+@media (min-width: 576px) {
+  .metiers .mes-opportunitees__lines-mobile {
+    display: none;
+  }
+}
+
 .metiers .mon-parcours {
   background-color: #2ab7c0;
   padding: 50px 0;
@@ -1367,7 +1450,15 @@ a.nav-link:hover {
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  font-size: 10px;
+}
+
+@media (min-width: 576px) {
+  .metiers .mon-parcours__card .c-tag {
+    margin-bottom: 20px;
+    font-size: 12px;
+  }
 }
 
 .metiers .mon-parcours__card--blue .mon-parcours__heading {
@@ -1399,22 +1490,53 @@ a.nav-link:hover {
   display: -ms-flexbox;
   display: flex;
   height: 50px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .metiers .mon-parcours__heading {
   font-weight: 700;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  font-size: 20px;
+}
+
+@media (min-width: 576px) {
+  .metiers .mon-parcours__heading {
+    font-size: 28px;
+  }
+}
+
+.metiers .mon-parcours__quote {
+  font-style: italic;
+  text-align: center;
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
+  .metiers .mon-parcours__quote {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .metiers .mon-parcours__quote {
+    height: 130px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .metiers .mon-parcours__quote {
+    font-size: 20px;
+    height: 150px;
+  }
 }
 
 .metiers .mon-parcours__aside {
   width: 100%;
   color: white;
-  padding: 20px;
-  font-size: 23px;
+  padding: 10px;
   font-weight: 700;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1422,11 +1544,25 @@ a.nav-link:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 16px;
+}
+
+@media (min-width: 576px) {
+  .metiers .mon-parcours__aside {
+    padding: 20px;
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 992px) {
   .metiers .mon-parcours__aside {
     height: 150px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .metiers .mon-parcours__aside {
+    font-size: 23px;
   }
 }
 
@@ -1436,21 +1572,19 @@ a.nav-link:hover {
           flex: 0 0 60px;
 }
 
-.metiers .mon-parcours__quote {
-  font-size: 20px;
-  font-style: italic;
-  text-align: center;
-}
-
-@media (min-width: 992px) {
-  .metiers .mon-parcours__quote {
-    height: 150px;
-  }
-}
-
 .metiers .mon-parcours__icon-time {
   width: 12px;
   margin-right: 5px;
+}
+
+.metiers .mon-parcours .c-btn {
+  font-size: 16px;
+}
+
+@media (min-width: 1200px) {
+  .metiers .mon-parcours .c-btn {
+    font-size: 20px;
+  }
 }
 
 .metiers .coup-de-boost {
@@ -1467,8 +1601,9 @@ a.nav-link:hover {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+}
+
+.metiers .coup-de-boost .c-tag__icon {
+  width: 11px;
 }
 /*# sourceMappingURL=style.css.map */

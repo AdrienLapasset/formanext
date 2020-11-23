@@ -1,0 +1,18 @@
+<svg id="Groupe_1" data-name="Groupe 1" xmlns="http://www.w3.org/2000/svg" width="36" height="310" viewBox="0 0 36 310">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fb3e3f;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-width: 3px;
+        fill-rule: evenodd;
+      }
+    </style>
+  </defs>
+  <path id="Forme_9" data-name="Forme 9" class="cls-1" d="M50,92.726V136c0,16.3.766,58,31.477,58" transform="translate(-48.5 -89.609)"/>
+  <path id="Forme_9_copie" data-name="Forme 9 copie" class="cls-1" d="M50,126v74.877C50,217.214,50.767,259,81.507,259" transform="translate(-48.5 -89.609)"/>
+  <path id="Forme_9_copie_2" data-name="Forme 9 copie 2" class="cls-1" d="M50,194.506V269.66c0,16.4.767,58.34,31.507,58.34" transform="translate(-48.5 -89.609)"/>
+  <path id="Forme_9_copie_3" data-name="Forme 9 copie 3" class="cls-1" d="M50,264.506V339.66c0,16.4.767,58.34,31.507,58.34" transform="translate(-48.5 -89.609)"/>
+</svg>

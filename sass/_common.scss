@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
+  width: fit-content;
   & > * {
     flex: 0 0 auto;
   }
@@ -57,7 +58,7 @@
   }
   &__icon {
     max-height: 20px;
-    max-width: 20px;
+    width: 20px;
     margin-right: 5px;
   }
   &--grey {
@@ -199,8 +200,9 @@
 .c-comment {
   position: relative;
   margin: 0 auto;
-  max-width: 380px;
+  max-width: 310px;
   @include media-breakpoint-up(lg) {
+    max-width: 380px;
     margin: 0;
     max-width: unset;
   }
@@ -208,13 +210,17 @@
     display: flex;
     align-items: center;
     color: $red;
-    font-size: 25px;
+    font-size: 19px;
     font-weight: 700;
     font-style: italic;
-    min-height: 270px;
+    min-height: 145px;
     &::before {
       content: url("/assets/imgs/comment-bg.png");
       position: absolute;
+    }
+    @include media-breakpoint-up(lg) {
+      min-height: 270px;
+      font-size: 25px;
     }
   }
   &__person {
