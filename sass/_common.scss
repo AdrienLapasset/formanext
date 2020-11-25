@@ -170,6 +170,9 @@
   font-size: 16px;
   text-align: center;
   transition: box-shadow 0.5s, transform 0.5s;
+  & > * {
+    flex: 0 0 auto;
+  }
   @include media-breakpoint-up(sm) {
     font-size: 20px;
   }

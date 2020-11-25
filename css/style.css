@@ -306,6 +306,12 @@ a.nav-link:hover {
   transition: box-shadow 0.5s, transform 0.5s, -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
 }
 
+.c-btn > * {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
 @media (min-width: 576px) {
   .c-btn {
     font-size: 20px;
