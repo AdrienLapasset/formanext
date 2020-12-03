@@ -13,4 +13,45 @@ $(document).ready(function () {
     }
   });
 
+
+
+
+
+
+  // Formulaire
+  var step = 1
+  handleStep(step)
+
+  $("#testForm").submit(function (event) {
+    event.preventDefault();
+    if ($("#testForm").valid()) {
+      step++
+      handleStep(step)
+    }
+  });
+
+  function handleStep(step) {
+    if (step === 1) {
+      $("#prevBtn").hide();
+      $("#step1").show();
+      $("#step2").hide();
+      $("#step3").hide();
+    }
+    if (step === 2) {
+      $("#step1").hide();
+      $("#step2").show();
+      $("#step3").hide();
+    }
+    if (step === 3) {
+      $("#step1").hide();
+      $("#step2").hide();
+      $("#step3").show();
+    }
+  }
+
+  $("#prevBtn").click(function () {
+
+  })
+
+
 });

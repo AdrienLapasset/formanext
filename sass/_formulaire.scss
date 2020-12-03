@@ -1,0 +1,41 @@
+.formulaire {
+  text-align: center;
+  &__explications {
+    color: $blue;
+    font-size: 25px;
+    font-weight: 700;
+  }
+  &__step-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__step {
+    color: red;
+  }
+  &__heading {
+    color: red;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+  }
+  &__input {
+    width: 420px;
+    background-color: $grey;
+    height: 42px;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+    &::placeholder {
+      color: $grey-dark;
+    }
+  }
+
+  &__nav-btn {
+    &#prevBtn {
+      transform: rotate(180deg);
+    }
+  }
+}

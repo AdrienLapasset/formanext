@@ -87,6 +87,11 @@ a.nav-link:hover {
   text-decoration: underline;
 }
 
+button {
+  background: transparent;
+  border: none;
+}
+
 .c-heading {
   font-weight: 700;
 }
@@ -185,7 +190,7 @@ a.nav-link:hover {
   font-size: 9px;
 }
 
-.c-card, .c-card:hover, .c-card-triangle:not(.c-card-triangle--no-hover):hover > .c-card-triangle__content, .c-card-triangle__content, .metiers .hero__img {
+.c-card, .c-card-triangle:not(.c-card-triangle--no-hover):hover > .c-card-triangle__content, .c-card-triangle__content, .metiers .hero__img {
   -webkit-box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
 }
@@ -212,7 +217,7 @@ a.nav-link:hover {
   }
 }
 
-.c-card:hover {
+.c-card:not(.c-card--no-hover):hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
 }
@@ -1631,5 +1636,71 @@ a.nav-link:hover {
 
 .metiers .coup-de-boost .c-tag__icon {
   width: 11px;
+}
+
+.formulaire {
+  text-align: center;
+}
+
+.formulaire__explications {
+  color: #2ab7c0;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.formulaire__step-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formulaire__step {
+  color: red;
+}
+
+.formulaire__heading {
+  color: red;
+  font-size: 25px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.formulaire__input {
+  width: 420px;
+  background-color: #eef4f2;
+  height: 42px;
+  border: none;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 0 20px;
+  margin-bottom: 15px;
+}
+
+.formulaire__input::-webkit-input-placeholder {
+  color: #635a5a;
+}
+
+.formulaire__input:-ms-input-placeholder {
+  color: #635a5a;
+}
+
+.formulaire__input::-ms-input-placeholder {
+  color: #635a5a;
+}
+
+.formulaire__input::placeholder {
+  color: #635a5a;
+}
+
+.formulaire__nav-btn#prevBtn {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 /*# sourceMappingURL=style.css.map */

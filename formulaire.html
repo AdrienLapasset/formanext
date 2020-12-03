@@ -106,11 +106,56 @@
   </header>
   <!-- End Header -->
 
-  <main class="metiers">
+  <main class="formulaire">
 
     <div class="container">
 
+      <h1 class="c-heading c-heading--1 blue">Tester son éligibilité</h1>
+      <aside class="formulaire__explications">Répondez à ce questionnaire pour connaître<br> votre éligibilité au reste à charge 0€</aside>
 
+      <form class="c-card c-card--no-hover mt-4 d-flex justify-content-between align-items-center" id="testForm">
+
+        <button class="formulaire__nav-btn" id="prevBtn">
+          <img src="./assets/icons/chevron-large.svg" alt="">
+        </button>
+
+        <div class="d-flex flex-column">
+
+          <!-- Step 1 -->
+          <div class="formulaire__step-container" id="step1">
+            <aside class="formulaire__step">1ère ÉTAPE</aside>
+            <h2 class="formulaire__heading">Je m’appelle...</h2>
+            <input class="formulaire__input" placeholder="Nom" type="text" name="firstName" required>
+            <input class="formulaire__input" placeholder="Prénom" type="text" name="lastName" required>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="formulaire__step-container" id="step2">
+            <aside class="formulaire__step">2eme ÉTAPE</aside>
+            <input class="formulaire__input" type="radio" name="salarie">
+            <input class="formulaire__input" type="radio" name="chomage">
+          </div>
+
+          <!-- Step 3 -->
+          <div class="formulaire__step-container" id="step3">
+            <aside class="formulaire__step">Encore 3 questions</aside>
+            <input class="formulaire__input" placeholder="Nom" type="text" name="toto">
+          </div>
+
+          <button type="submit" class="c-btn c-btn--red d-flex align-items-center mt-4 mx-auto" id="next-btn">
+            Question suivante
+            <svg class="ml-3" width="24px" id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 143">
+              <polyline points="332 62 0 0 58 143" style="fill:white" />
+            </svg>
+          </button>
+
+        </div>
+
+        <button type="submit" class="formulaire__nav-btn" id="nextBtn">
+          <img src="./assets/icons/chevron-large.svg" alt="">
+        </button>
+
+      </form>
 
     </div>
     <!-- End container -->
@@ -152,6 +197,7 @@
 
 <!-- JS Imports -->
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.min.js"></script>
 <script src="modules/bootstrap-4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 

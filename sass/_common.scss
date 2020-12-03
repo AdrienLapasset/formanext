@@ -92,9 +92,8 @@
   @include media-breakpoint-up(xl) {
     margin-bottom: 0;
   }
-  &:hover {
+  &:not(.c-card--no-hover):hover {
     transform: translateY(-5px);
-    @extend %block-shadow;
   }
   .c-tag {
     margin-bottom: 10px;
