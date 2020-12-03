@@ -14,7 +14,7 @@ $(document).ready(function () {
   });
 
   // Formulaire
-  var step = 3
+  var step = 1
   handleStep(step)
 
   $("#testForm").submit(function (event) {
