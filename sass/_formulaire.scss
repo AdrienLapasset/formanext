@@ -1,5 +1,17 @@
 .formulaire {
   text-align: center;
+  &__block {
+    margin: 30px 0 100px;
+    display: flex;
+    align-items: center;
+    padding: 20px 40px;
+    & > * {
+      flex-shrink: 1;
+      &:nth-child(2) {
+        flex-grow: 1;
+      }
+    }
+  }
   &__explications {
     color: $blue;
     font-size: 25px;
@@ -8,7 +20,7 @@
   &__step-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    width: 420px;
   }
   &__step {
     color: red;
@@ -20,7 +32,7 @@
     margin-bottom: 30px;
   }
   &__input {
-    width: 420px;
+    width: 100%;
     background-color: $grey;
     height: 42px;
     border: none;
@@ -32,10 +44,38 @@
       color: $grey-dark;
     }
   }
-
   &__nav-btn {
     &#prevBtn {
+      margin-right: auto;
       transform: rotate(180deg);
+    }
+    &#nextBtn {
+      margin-left: auto;
+    }
+  }
+  &__radio {
+    cursor: pointer;
+    span {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid black;
+      border-radius: 5px;
+      font-size: 20px;
+      font-weight: 700;
+      width: 100%;
+      height: 42px;
+    }
+    input {
+      position: absolute;
+      opacity: 0;
+      height: 0;
+      width: 0;
+      &:checked ~ span {
+        color: white;
+        background-color: $blue;
+        border-color: $blue;
+      }
     }
   }
 }
