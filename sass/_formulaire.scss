@@ -4,7 +4,10 @@
     margin: 30px 0 100px;
     display: flex;
     align-items: center;
-    padding: 20px 40px;
+    padding: 20px;
+    @include media-breakpoint-up(sm) {
+      padding: 20px 40px;
+    }
     & > * {
       flex-shrink: 1;
       &:nth-child(2) {
@@ -23,6 +26,7 @@
     display: none;
     opacity: 0;
     transform: translateX(20px);
+    width: 100%;
     &.active {
       display: flex;
       animation: fade-in 1s forwards;
@@ -31,7 +35,10 @@
   &__input-container {
     display: flex;
     flex-direction: column;
-    width: 420px;
+    width: 100%;
+    @include media-breakpoint-up(sm) {
+      width: 420px;
+    }
   }
   &__step {
     color: red;
@@ -64,11 +71,17 @@
     }
   }
   &__nav-btn {
-    &#prevBtn {
+    display: none;
+    &.active {
+      @include media-breakpoint-up(md) {
+        display: block;
+      }
+    }
+    &#prevChevron {
       margin-right: auto;
       transform: rotate(180deg);
     }
-    &#nextBtn {
+    &#nextChevron {
       margin-left: auto;
     }
   }

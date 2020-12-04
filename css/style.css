@@ -1653,7 +1653,13 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 20px 40px;
+  padding: 20px;
+}
+
+@media (min-width: 576px) {
+  .formulaire__block {
+    padding: 20px 40px;
+  }
 }
 
 .formulaire__block > * {
@@ -1685,6 +1691,7 @@ button {
   opacity: 0;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
+  width: 100%;
 }
 
 .formulaire__step-container.active {
@@ -1703,7 +1710,13 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  width: 420px;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .formulaire__input-container {
+    width: 420px;
+  }
 }
 
 .formulaire__step {
@@ -1755,13 +1768,23 @@ button {
   background-position-y: 8px;
 }
 
-.formulaire__nav-btn#prevBtn {
+.formulaire__nav-btn {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .formulaire__nav-btn.active {
+    display: block;
+  }
+}
+
+.formulaire__nav-btn#prevChevron {
   margin-right: auto;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
 }
 
-.formulaire__nav-btn#nextBtn {
+.formulaire__nav-btn#nextChevron {
   margin-left: auto;
 }
 

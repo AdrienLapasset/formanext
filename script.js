@@ -58,7 +58,8 @@ $(document).ready(function () {
 
   function handleStep(step) {
     if (step === 1) {
-      $("#prevChevron").hide();
+      $("#prevChevron").removeClass('active');
+      $("#nextChevron").addClass('active');
       $("#step1").addClass("active");
       $("#step2").removeClass('active');
       $("#submitBtn > #done-content").hide();
@@ -66,7 +67,7 @@ $(document).ready(function () {
       $("#submitBtn").hide();
     }
     if (step === 2) {
-      $("#prevChevron").show();
+      $("#prevChevron").addClass("active");
       $("#step1").removeClass('active');
       $("#step2").addClass("active");
       $("#step3").removeClass('active');
@@ -85,17 +86,17 @@ $(document).ready(function () {
       $("#step4").removeClass('active');
       $("#step5").addClass("active");
       $("#step6").removeClass('active');
-      $("#nextChevron").show();
-      $("#nextBtn").hide();
+      $("#nextChevron").addClass("active");
       $(".formulaire__text-small").hide();
     }
     if (step === 6) {
       $(".formulaire__nav-btn#nextBtn").hide();
       $("#step5").removeClass('active');
       $("#step6").addClass("active");
-      $("#nextChevron").hide();
+      $("#nextChevron").removeClass('active');
       $("#submitBtn").show();
       $(".formulaire__text-small").show();
+      $("#nextBtn").hide();
     }
   }
 
