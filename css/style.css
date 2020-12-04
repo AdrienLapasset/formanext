@@ -24,7 +24,7 @@
 }
 
 .green {
-  color: #2e995a;
+  color: #2e995a !important;
 }
 
 *,
@@ -319,6 +319,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 45px;
   padding: 10px 30px;
   font-size: 16px;
@@ -1671,6 +1674,28 @@ button {
 }
 
 .formulaire__step-container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+  opacity: 0;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+}
+
+.formulaire__step-container.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-animation: fade-in 1s forwards;
+          animation: fade-in 1s forwards;
+}
+
+.formulaire__input-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1719,6 +1744,17 @@ button {
   color: #635a5a;
 }
 
+.formulaire__input--select {
+  cursor: pointer;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+  background-repeat: no-repeat;
+  background-position-x: 99%;
+  background-position-y: 8px;
+}
+
 .formulaire__nav-btn#prevBtn {
   margin-right: auto;
   -webkit-transform: rotate(180deg);
@@ -1762,5 +1798,26 @@ button {
   color: white;
   background-color: #2ab7c0;
   border-color: #2ab7c0;
+}
+
+.formulaire__text {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+@-webkit-keyframes fade-in {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
+    -webkit-transform: translateX(0px);
+            transform: translateX(0px);
+  }
 }
 /*# sourceMappingURL=style.css.map */

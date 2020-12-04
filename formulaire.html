@@ -117,7 +117,7 @@
 
         <!-- div for layout -->
         <div class="d-flex">
-          <button type="button" class="formulaire__nav-btn" id="prevBtn">
+          <button type="button" class="formulaire__nav-btn" id="prevChevron">
             <img src="./assets/icons/chevron-large.svg" alt="">
           </button>
         </div>
@@ -125,71 +125,143 @@
         <div class="d-flex flex-column align-items-center">
 
           <!-- Step 1 -->
-          <div class="formulaire__step-container" id="step1">
+          <section class="formulaire__step-container" id="step1">
             <aside class="formulaire__step">1ère ÉTAPE</aside>
             <h2 class="formulaire__heading">Je m’appelle...</h2>
-            <input class="formulaire__input" placeholder="Nom" type="text" name="firstName">
-            <input class="formulaire__input" placeholder="Prénom" type="text" name="lastName">
-          </div>
+            <div class="formulaire__input-container">
+              <input class="formulaire__input" placeholder="Nom" type="text" name="firstName">
+              <input class="formulaire__input" placeholder="Prénom" type="text" name="lastName">
+            </div>
+          </section>
 
           <!-- Step 2 -->
-          <div class="formulaire__step-container" id="step2">
+          <section class="formulaire__step-container" id="step2">
             <aside class="formulaire__step">2eme ÉTAPE</aside>
             <h2 class="formulaire__heading">Je suis actuellement…</h2>
-            <label class="formulaire__radio">
-              <input type="radio" name="status">
-              <span>Salarié.e</span>
-            </label>
-            <label class="formulaire__radio">
-              <input type="radio" name="status">
-              <span>En chômage partiel</span>
-            </label>
-            <label class="formulaire__radio">
-              <input type="radio" name="status">
-              <span>Indépendant.e</span>
-            </label>
-            <label class="formulaire__radio">
-              <input type="radio" name="status">
-              <span>Demandeur.se d’emploi</span>
-            </label>
-            <label class="formulaire__radio">
-              <input type="radio" name="status">
-              <span>Etudiant.e</span>
-            </label>
-          </div>
+            <div class="formulaire__input-container">
+              <label class="formulaire__radio">
+                <input type="radio" name="status" value="toto">
+                <span>Salarié.e</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="status">
+                <span>En chômage partiel</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="status">
+                <span>Indépendant.e</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="status">
+                <span>Demandeur.se d’emploi</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="status">
+                <span>Etudiant.e</span>
+              </label>
+            </div>
+          </section>
 
           <!-- Step 3 -->
-          <div class="formulaire__step-container" id="step3">
+          <section class="formulaire__step-container" id="step3">
             <aside class="formulaire__step">Encore 3 questions</aside>
             <h2 class="formulaire__heading">Quelques informations sur mon entreprise actuelle :</h2>
-            <input class="formulaire__input" placeholder="Ma fonction" type="text">
-            <input class="formulaire__input" placeholder="Mon entreprise" type="text">
-            <select class="formulaire__input">
-              <option value="">Son effectif</option>
-              <option value="">1</option>
-              <option value="">10</option>
-              <option value="">100</option>
-            </select>
-          </div>
+            <div class="formulaire__input-container">
+              <input class="formulaire__input" name="fonction" placeholder="Ma fonction" type="text">
+              <input class="formulaire__input" placeholder="Mon entreprise" type="text">
+              <select class="formulaire__input formulaire__input--select">
+                <option value="">Son effectif</option>
+                <option value="">1</option>
+                <option value="">10</option>
+                <option value="">100</option>
+              </select>
+            </div>
+          </section>
 
           <!-- Step 4 -->
-          <div class="formulaire__step-container" id="step4">
-            <h2 class="formulaire__heading">Bonne nouvelle Nathalie !</h2>
-            <input class="formulaire__input" placeholder="Ma fonction" type="text">
-            <input class="formulaire__input" placeholder="Mon entreprise" type="text">
-          </div>
+          <section class="formulaire__step-container" id="step4">
+            <aside class="formulaire__step">Encore 2 questions</aside>
+            <h2 class="formulaire__heading">J’appartiens à la tranche d’âge suivante :</h2>
+            <div class="formulaire__input-container">
+              <label class="formulaire__radio">
+                <input type="radio" name="age">
+                <span>Moins de 20 ans</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="age">
+                <span>Entre 20 et 25 ans</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="age">
+                <span>Entre 26 et 35 ans</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="age">
+                <span>Ente 36 et 45 ans</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="age">
+                <span>Plus de 45 ans</span>
+              </label>
+            </div>
+          </section>
 
-          <button type="submit" class="c-btn c-btn--red d-flex align-items-center mt-4 mx-auto" id="next-btn">
+          <!-- Step 5 -->
+          <section class="formulaire__step-container" id="step5">
+            <aside class="formulaire__step">Dernière question</aside>
+            <h2 class="formulaire__heading">J’ai un niveau d’étude…</h2>
+            <div class="formulaire__input-container">
+              <label class="formulaire__radio">
+                <input type="radio" name="level">
+                <span>Inférieur au Bac</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="level">
+                <span>Bac</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="level">
+                <span>Bac + 2</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="level">
+                <span>Bac + 3</span>
+              </label>
+              <label class="formulaire__radio">
+                <input type="radio" name="level">
+                <span>Supérieur à Bac + 5</span>
+              </label>
+            </div>
+          </section>
+
+          <!-- Step 6 -->
+          <section class="formulaire__step-container" id="step6">
+            <h2 class="formulaire__heading green">Bonne nouvelle Nathalie !</h2>
+            <p class="formulaire__text">Il semblerait que votre situation actuelle vous permette<br>de bénéficier de plusieurs dispositifs de financement.</p>
+            <p class="formulaire__text mb-4">Echangeons sur votre projet afin de définir lesquels pourront<br>financer jusqu’à 100% votre formation !</p>
+            <div class="formulaire__input-container">
+              <input class="formulaire__input" placeholder="Adresse email" type="email" name="email">
+              <input class="formulaire__input" placeholder="Numéro de téléphone" type="text">
+            </div>
+          </section>
+
+          <button type="button" class="c-btn c-btn--red mt-4 mx-auto" id="nextBtn">
             Question suivante
             <svg class="ml-3" width="24px" id="Calque_1" data-name="Calque 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 143">
               <polyline points="332 62 0 0 58 143" style="fill:white" />
             </svg>
           </button>
 
+          <button type="submit" class="c-btn c-btn--red mt-4 mx-auto" id="submitBtn">
+            Terminer
+          </button>
+
+          <p class="formulaire__text-small mt-3">En cliquant ci-dessus sur terminer, vous acceptez nos conditions<br> générales d'utilisation et notre politique de confidentialité.</p>
+
         </div>
 
         <div class="d-flex">
-          <button type="submit" class="formulaire__nav-btn" id="nextBtn">
+          <button type="button" class="formulaire__nav-btn" id="nextChevron">
             <img src="./assets/icons/chevron-large.svg" alt="">
           </button>
         </div>

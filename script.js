@@ -17,51 +17,85 @@ $(document).ready(function () {
   var step = 1
   handleStep(step)
 
-  $("#testForm").submit(function (event) {
-    event.preventDefault();
-    if ($("#testForm").valid()) {
+  $("#nextBtn, #nextChevron").click(function () {
+    $("#testForm").validate({
+      rules: {
+        firstName: {
+          required: true
+        },
+        status: {
+          required: true
+        },
+        fonction: {
+          required: true
+        },
+        age: {
+          required: true
+        },
+        level: {
+          required: true
+        },
+        email: {
+          required: true
+        },
+      },
+      messages: {
+        firstName: {
+          required: "firstName required",
+        },
+      }
+    });
+    if ((step < 6) && $("#testForm").valid()) {
       step++
       handleStep(step)
     }
-  });
+  })
 
-  $("#prevBtn").click(function () {
+  $("#prevChevron").click(function () {
     step--
     handleStep(step)
   })
 
   function handleStep(step) {
     if (step === 1) {
-      $("#prevBtn").hide();
-      $("#step1").show();
-      $("#step2").hide();
-      $("#step3").hide();
-      $("#step4").hide();
-      $("#step1 input").prop('required', true);
+      $("#prevChevron").hide();
+      $("#step1").addClass("active");
+      $("#step2").removeClass('active');
+      $("#submitBtn > #done-content").hide();
+      $(".formulaire__text-small").hide();
+      $("#submitBtn").hide();
     }
     if (step === 2) {
-      $("#prevBtn").show();
-      $("#step1").hide();
-      $("#step2").show();
-      $("#step3").hide();
-      $("#step4").hide();
-      $("#step2 input").prop('required', true);
+      $("#prevChevron").show();
+      $("#step1").removeClass('active');
+      $("#step2").addClass("active");
+      $("#step3").removeClass('active');
     }
     if (step === 3) {
-      $("#step1").hide();
-      $("#step2").hide();
-      $("#step3").show();
-      $("#step4").hide();
-      $("#step3 input").prop('required', true);
-      $("#step3 select").prop('required', true);
+      $("#step2").removeClass('active');
+      $("#step3").addClass("active");
+      $("#step4").removeClass('active');
     }
     if (step === 4) {
-      $("#step1").hide();
-      $("#step2").hide();
-      $("#step3").hide();
-      $("#step4").show();
-      $("#step4 input").prop('required', true);
+      $("#step3").removeClass('active');
+      $("#step4").addClass("active");
+      $("#step5").removeClass('active');
+    }
+    if (step === 5) {
+      $("#step4").removeClass('active');
+      $("#step5").addClass("active");
+      $("#step6").removeClass('active');
+      $("#nextChevron").show();
       $("#nextBtn").hide();
+      $(".formulaire__text-small").hide();
+    }
+    if (step === 6) {
+      $(".formulaire__nav-btn#nextBtn").hide();
+      $("#step5").removeClass('active');
+      $("#step6").addClass("active");
+      $("#nextChevron").hide();
+      $("#submitBtn").show();
+      $(".formulaire__text-small").show();
     }
   }
 
