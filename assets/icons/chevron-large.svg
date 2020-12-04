@@ -1,15 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="32.22" height="109.531" viewBox="0 0 32.22 109.531">
-  <defs>
-    <style>
-      .cls-1 {
-        fill: none;
-        stroke: #d7d7d7;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 3px;
-        fill-rule: evenodd;
-      }
-    </style>
-  </defs>
-  <path id="Forme_997" data-name="Forme 997" class="cls-1" d="M1381,411l32,53.633-32,54.377" transform="translate(-1382.28 -410.219)"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="112px" viewBox="0 0 36 112" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 59.1 (86144) - https://sketch.com -->
+    <title>chevron-large</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+        <g id="chevron-large" transform="translate(18.500000, 56.500000) rotate(-180.000000) translate(-18.500000, -56.500000) translate(2.000000, 2.000000)" stroke="#D7D7D7" stroke-width="3">
+            <polyline id="Forme_997" points="0.72 0.781 32.72 54.414 0.72 108.791"></polyline>
+        </g>
+    </g>
 </svg>

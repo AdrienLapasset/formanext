@@ -72,6 +72,7 @@
   }
   &__nav-btn {
     display: none;
+    transition: transform 0.4s;
     &.active {
       @include media-breakpoint-up(md) {
         display: block;
@@ -79,10 +80,19 @@
     }
     &#prevChevron {
       margin-right: auto;
-      transform: rotate(180deg);
     }
     &#nextChevron {
       margin-left: auto;
+    }
+    #chevron-large {
+      transition: stroke 0.4s;
+      stroke: #d7d7d7;
+    }
+    &:hover {
+      transform: scale(1.1);
+      #chevron-large {
+        stroke: $grey-dark;
+      }
     }
   }
   &__radio {

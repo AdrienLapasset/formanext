@@ -92,6 +92,10 @@ button {
   border: none;
 }
 
+button:focus {
+  outline: none;
+}
+
 .c-heading {
   font-weight: 700;
 }
@@ -1770,6 +1774,10 @@ button {
 
 .formulaire__nav-btn {
   display: none;
+  -webkit-transition: -webkit-transform 0.4s;
+  transition: -webkit-transform 0.4s;
+  transition: transform 0.4s;
+  transition: transform 0.4s, -webkit-transform 0.4s;
 }
 
 @media (min-width: 768px) {
@@ -1780,12 +1788,25 @@ button {
 
 .formulaire__nav-btn#prevChevron {
   margin-right: auto;
-  -webkit-transform: rotate(180deg);
-          transform: rotate(180deg);
 }
 
 .formulaire__nav-btn#nextChevron {
   margin-left: auto;
+}
+
+.formulaire__nav-btn #chevron-large {
+  -webkit-transition: stroke 0.4s;
+  transition: stroke 0.4s;
+  stroke: #d7d7d7;
+}
+
+.formulaire__nav-btn:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.formulaire__nav-btn:hover #chevron-large {
+  stroke: #635a5a;
 }
 
 .formulaire__radio {
