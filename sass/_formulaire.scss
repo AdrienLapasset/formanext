@@ -1,17 +1,20 @@
 .formulaire {
   text-align: center;
   &__block {
+    min-height: 505px;
     margin: 30px 0 100px;
     display: flex;
-    align-items: center;
+    // align-items: center;
     padding: 20px;
     @include media-breakpoint-up(sm) {
       padding: 20px 40px;
     }
     & > * {
       flex-shrink: 1;
+      flex-basis: 40px;
       &:nth-child(2) {
         flex-grow: 1;
+        flex-basis: auto;
       }
     }
   }
@@ -20,17 +23,23 @@
     font-size: 25px;
     font-weight: 700;
   }
+  &__steps-container {
+    display: flex;
+    flex-direction: column;
+  }
   &__step-container {
     flex-direction: column;
     align-items: center;
-    display: none;
-    opacity: 0;
     transform: translateX(20px);
+    position: relative;
     width: 100%;
-    &.active {
-      display: flex;
-      animation: fade-in 1s forwards;
-    }
+    display: none;
+    left: 20px;
+    opacity: 0;
+    // &.active {
+    //   display: flex;
+    //   animation: fade-in 0.4s forwards;
+    // }
   }
   &__input-container {
     display: flex;
@@ -130,5 +139,11 @@
   to {
     opacity: 1;
     transform: translateX(0px);
+  }
+}
+@keyframes fade-out {
+  to {
+    opacity: 0;
+    transform: translateX(-10px);
   }
 }

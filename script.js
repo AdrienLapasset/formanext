@@ -15,7 +15,7 @@ $(document).ready(function () {
 
   // Formulaire
   var step = 1
-  handleStep(step)
+  initStep(step)
 
   $("#nextBtn, #nextChevron").click(function () {
     $("#testForm").validate({
@@ -47,57 +47,100 @@ $(document).ready(function () {
     });
     if ((step < 6) && $("#testForm").valid()) {
       step++
-      handleStep(step)
+      nextStep(step)
     }
   })
 
   $("#prevChevron").click(function () {
     step--
-    handleStep(step)
+    prevStep(step)
   })
 
-  function handleStep(step) {
-    if (step === 1) {
-      $("#prevChevron").removeClass('active');
-      $("#nextChevron").addClass('active');
-      $("#step1").addClass("active");
-      $("#step2").removeClass('active');
-      $("#submitBtn > #done-content").hide();
-      $(".formulaire__text-small").hide();
-      $("#submitBtn").hide();
-    }
+  function initStep(step) {
+    $("#nextChevron").addClass('active');
+    $("#submitBtn > #done-content").hide();
+    $(".formulaire__text-small").hide();
+    $("#submitBtn").hide();
+    $("#step1").css({ "display": "flex", "opacity": "1", "left": "0px" });
+  }
+
+  function nextStep(step) {
     if (step === 2) {
       $("#prevChevron").addClass("active");
-      $("#step1").removeClass('active');
-      $("#step2").addClass("active");
-      $("#step3").removeClass('active');
+      animateNext(step);
     }
     if (step === 3) {
-      $("#step2").removeClass('active');
-      $("#step3").addClass("active");
-      $("#step4").removeClass('active');
+      animateNext(step);
     }
     if (step === 4) {
-      $("#step3").removeClass('active');
-      $("#step4").addClass("active");
-      $("#step5").removeClass('active');
+      animateNext(step);
     }
     if (step === 5) {
-      $("#step4").removeClass('active');
-      $("#step5").addClass("active");
-      $("#step6").removeClass('active');
       $("#nextChevron").addClass("active");
       $(".formulaire__text-small").hide();
+      animateNext(step);
     }
     if (step === 6) {
       $(".formulaire__nav-btn#nextBtn").hide();
-      $("#step5").removeClass('active');
-      $("#step6").addClass("active");
       $("#nextChevron").removeClass('active');
       $("#submitBtn").show();
       $(".formulaire__text-small").show();
       $("#nextBtn").hide();
+      animateNext(step);
     }
   }
+
+  function prevStep(step) {
+    if (step === 1) {
+      $("#prevChevron").removeClass('active');
+      animatePrev(step)
+    }
+    if (step === 2) {
+      animatePrev(step)
+    }
+    if (step === 3) {
+      animatePrev(step)
+    }
+    if (step === 4) {
+      animatePrev(step)
+    }
+    if (step === 5) {
+      $("#nextChevron").addClass("active");
+      $(".formulaire__text-small").hide();
+      $("#submitBtn").hide();
+      $("#nextBtn").show();
+      animatePrev(step)
+    }
+  }
+
+  function animateNext(step) {
+    $(`#step${step - 1}`).animate({
+      left: '-20px',
+      opacity: '0',
+    }, 400, function () {
+      $(this).css({ "left": "-20px" });
+      $(this).hide();
+      $(`#step${step}`).css("display", "flex");
+      $(`#step${step}`).animate({
+        left: '0',
+        opacity: '1',
+      }, 400);
+    });
+  }
+
+  function animatePrev(step) {
+    $(`#step${step + 1}`).animate({
+      left: '20px',
+      opacity: '0',
+    }, 400, function () {
+      $(this).hide();
+      $(`#step${step}`).css({ "display": "flex" });
+      $(`#step${step}`).animate({
+        left: '0',
+        opacity: '1',
+      }, 400);
+    });
+  }
+
 
 });
