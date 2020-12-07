@@ -328,7 +328,7 @@ button:focus {
           align-items: center;
   border-radius: 45px;
   padding: 10px 30px;
-  font-size: 16px;
+  font-size: 15px;
   text-align: center;
   -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
   transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
@@ -1650,7 +1650,6 @@ button:focus {
 }
 
 .formulaire__block {
-  min-height: 505px;
   margin: 30px 0 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1660,15 +1659,18 @@ button:focus {
 
 @media (min-width: 576px) {
   .formulaire__block {
+    min-height: 505px;
     padding: 20px 40px;
   }
 }
 
-.formulaire__block > * {
-  -ms-flex-negative: 1;
-      flex-shrink: 1;
-  -ms-flex-preferred-size: 40px;
-      flex-basis: 40px;
+@media (min-width: 576px) {
+  .formulaire__block > * {
+    -ms-flex-negative: 1;
+        flex-shrink: 1;
+    -ms-flex-preferred-size: 40px;
+        flex-basis: 40px;
+  }
 }
 
 .formulaire__block > *:nth-child(2) {
@@ -1681,8 +1683,14 @@ button:focus {
 
 .formulaire__explications {
   color: #2ab7c0;
-  font-size: 25px;
+  font-size: 18px;
   font-weight: 700;
+}
+
+@media (min-width: 992px) {
+  .formulaire__explications {
+    font-size: 25px;
+  }
 }
 
 .formulaire__steps-container {
@@ -1838,10 +1846,16 @@ button:focus {
           align-items: center;
   border: 2px solid black;
   border-radius: 5px;
-  font-size: 20px;
+  font-size: 16px;
   font-weight: 700;
   width: 100%;
   height: 42px;
+}
+
+@media (min-width: 992px) {
+  .formulaire__radio span {
+    font-size: 20px;
+  }
 }
 
 .formulaire__radio input {
@@ -1860,12 +1874,34 @@ button:focus {
 .formulaire__radio input + .error {
   position: absolute;
   bottom: -25px;
-  left: 20px;
+  left: 0px;
+}
+
+@media (min-width: 992px) {
+  .formulaire__radio input + .error {
+    left: 20px;
+  }
 }
 
 .formulaire__text {
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 15px;
+}
+
+@media (min-width: 992px) {
+  .formulaire__text {
+    font-size: 20px;
+  }
+}
+
+.formulaire__text-small {
+  font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  .formulaire__text-small {
+    font-size: 14px;
+  }
 }
 
 .formulaire__input + .error, .formulaire__radio input + .error {
@@ -1873,6 +1909,13 @@ button:focus {
   opacity: 0;
   -webkit-animation: fade-in 0.4s forwards;
           animation: fade-in 0.4s forwards;
+  font-size: 12px;
+}
+
+@media (min-width: 992px) {
+  .formulaire__input + .error, .formulaire__radio input + .error {
+    font-size: 14px;
+  }
 }
 
 .formulaire__input + .error img, .formulaire__radio input + .error img {
