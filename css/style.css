@@ -1785,7 +1785,7 @@ button:focus {
   background-position-y: 8px;
 }
 
-.formulaire__input + .error {
+.formulaire__input + label.error {
   text-align: left;
   position: relative;
   top: -15px;
@@ -1852,6 +1852,11 @@ button:focus {
   height: 42px;
 }
 
+.formulaire__radio span:hover {
+  color: #2ab7c0;
+  border-color: #2ab7c0;
+}
+
 @media (min-width: 992px) {
   .formulaire__radio span {
     font-size: 20px;
@@ -1895,6 +1900,7 @@ button:focus {
 }
 
 .formulaire__text-small {
+  display: none;
   font-size: 12px;
 }
 
@@ -1904,7 +1910,12 @@ button:focus {
   }
 }
 
-.formulaire__input + .error, .formulaire__radio input + .error {
+.formulaire__btn {
+  margin: 30px auto 0;
+  display: none;
+}
+
+.formulaire__input + label.error, .formulaire__radio input + .error {
   color: #fe4040;
   opacity: 0;
   -webkit-animation: fade-in 0.4s forwards;
@@ -1913,12 +1924,12 @@ button:focus {
 }
 
 @media (min-width: 992px) {
-  .formulaire__input + .error, .formulaire__radio input + .error {
+  .formulaire__input + label.error, .formulaire__radio input + .error {
     font-size: 14px;
   }
 }
 
-.formulaire__input + .error img, .formulaire__radio input + .error img {
+.formulaire__input + label.error img, .formulaire__radio input + .error img {
   width: 12px;
   position: relative;
   top: -2px;

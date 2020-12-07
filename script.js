@@ -15,7 +15,7 @@ $(document).ready(function () {
 
   // Formulaire
   jQuery.extend(jQuery.validator.messages, {
-    required: "<img src='/assets/icons/chevron-small.svg'>Veuiller remplir ce champ",
+    required: "<img src='/assets/icons/chevron-small.svg'>Veuillez remplir ce champ",
     email: "<img src='/assets/icons/chevron-small.svg'>Adresse email incorrect",
   });
 
@@ -59,16 +59,16 @@ $(document).ready(function () {
       },
       messages: {
         status: {
-          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionner un élément dans la liste",
+          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionnez un élément dans la liste",
         },
         effective: {
-          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionner un élément dans la liste",
+          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionnez un élément dans la liste",
         },
         age: {
-          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionner un élément dans la liste",
+          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionnez un élément dans la liste",
         },
         level: {
-          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionner un élément dans la liste",
+          required: "<img src='/assets/icons/chevron-small.svg'>Sélectionnez un élément dans la liste",
         },
       }
     });
@@ -84,10 +84,6 @@ $(document).ready(function () {
   })
 
   function initStep() {
-    $("#nextChevron").addClass('active');
-    $("#submitBtn > #done-content").hide();
-    $(".formulaire__text-small").hide();
-    $("#submitBtn").hide();
     $("#step1").css({ "display": "flex", "opacity": "1", "left": "0px" });
   }
 
@@ -108,7 +104,6 @@ $(document).ready(function () {
       animateNext(step);
     }
     if (step === 6) {
-      $(".formulaire__nav-btn#nextBtn").hide();
       $("#nextChevron").removeClass('active');
       $("#submitBtn").show();
       $(".formulaire__text-small").show();
