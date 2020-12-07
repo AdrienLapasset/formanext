@@ -144,25 +144,20 @@
   }
 }
 
-@keyframes fade-in {
-  to {
-    opacity: 1;
-    transform: translateX(0px);
-  }
-}
-@keyframes fade-out {
-  to {
-    opacity: 0;
-    transform: translateX(-10px);
-  }
-}
-
 %error-message {
   color: $red;
+  opacity: 0;
+  animation: fade-in 0.4s forwards;
   img {
     width: 12px;
     position: relative;
     top: -2px;
     margin-right: 5px;
+  }
+}
+
+@keyframes fade-in {
+  to {
+    opacity: 1;
   }
 }
