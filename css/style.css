@@ -317,6 +317,16 @@ button:focus {
   }
 }
 
+.c-card-triangle--small {
+  padding: 0 0 10px 10px;
+}
+
+.c-card-triangle--small .c-card-triangle__bg {
+  top: 20px;
+  right: 10px;
+  height: calc(100% - 20px);
+}
+
 .c-btn {
   color: white;
   font-weight: 700;
@@ -420,6 +430,11 @@ button:focus {
   font-size: 12px;
   text-transform: uppercase;
   line-height: 1.3;
+}
+
+.c-block {
+  padding: 30px;
+  background-color: #eef4f2;
 }
 
 .header {
@@ -1946,5 +1961,27 @@ button:focus {
   to {
     opacity: 1;
   }
+}
+
+.offre .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.offre .hero > *:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 170px;
+          flex: 0 0 170px;
+  margin-right: 40px;
+}
+
+.offre .hero .c-card-triangle__bg {
+  height: 140px;
+}
+
+.offre .hero__img {
+  position: relative;
+  max-width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

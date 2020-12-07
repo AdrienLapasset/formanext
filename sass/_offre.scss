@@ -1,0 +1,16 @@
+.offre {
+  .hero {
+    display: flex;
+    & > *:first-child {
+      flex: 0 0 170px;
+      margin-right: 40px;
+    }
+    .c-card-triangle__bg {
+      height: 140px;
+    }
+    &__img {
+      position: relative;
+      max-width: 100%;
+    }
+  }
+}
