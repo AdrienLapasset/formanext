@@ -39,6 +39,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    position: relative;
     @include media-breakpoint-up(sm) {
       width: 420px;
     }
@@ -71,6 +72,14 @@
       background-repeat: no-repeat;
       background-position-x: 99%;
       background-position-y: 8px;
+    }
+    & + .error {
+      @extend %error-message;
+      text-align: left;
+      position: relative;
+      top: -15px;
+      margin-bottom: -15px;
+      padding-left: 20px;
     }
   }
   &__nav-btn {
@@ -121,6 +130,12 @@
         background-color: $blue;
         border-color: $blue;
       }
+      & + .error {
+        @extend %error-message;
+        position: absolute;
+        bottom: -25px;
+        left: 20px;
+      }
     }
   }
   &__text {
@@ -139,5 +154,15 @@
   to {
     opacity: 0;
     transform: translateX(-10px);
+  }
+}
+
+%error-message {
+  color: $red;
+  img {
+    width: 12px;
+    position: relative;
+    top: -2px;
+    margin-right: 5px;
   }
 }

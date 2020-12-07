@@ -146,7 +146,7 @@
             <h2 class="formulaire__heading">Je suis actuellement…</h2>
             <div class="formulaire__input-container">
               <label class="formulaire__radio">
-                <input type="radio" name="status" value="toto">
+                <input type="radio" name="status">
                 <span>Salarié.e</span>
               </label>
               <label class="formulaire__radio">
@@ -173,13 +173,13 @@
             <aside class="formulaire__step">Encore 3 questions</aside>
             <h2 class="formulaire__heading">Quelques informations sur mon entreprise actuelle :</h2>
             <div class="formulaire__input-container">
-              <input class="formulaire__input" name="fonction" placeholder="Ma fonction" type="text">
-              <input class="formulaire__input" placeholder="Mon entreprise" type="text">
-              <select class="formulaire__input formulaire__input--select">
+              <input class="formulaire__input" name="function" placeholder="Ma fonction" type="text">
+              <input class="formulaire__input" name="company" placeholder="Mon entreprise" type="text">
+              <select class="formulaire__input formulaire__input--select" name="effective">
                 <option value="">Son effectif</option>
-                <option value="">1</option>
-                <option value="">10</option>
-                <option value="">100</option>
+                <option value="1">1</option>
+                <option value="10">10</option>
+                <option value="100">100</option>
               </select>
             </div>
           </section>
@@ -247,7 +247,7 @@
             <p class="formulaire__text mb-4">Echangeons sur votre projet afin de définir lesquels pourront<br class="d-none d-lg-block">financer jusqu’à 100% votre formation !</p>
             <div class="formulaire__input-container">
               <input class="formulaire__input" placeholder="Adresse email" type="email" name="email">
-              <input class="formulaire__input" placeholder="Numéro de téléphone" type="text">
+              <input class="formulaire__input" placeholder="Numéro de téléphone" type="text" name="phone">
             </div>
           </section>
 

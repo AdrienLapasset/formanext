@@ -1719,6 +1719,7 @@ button:focus {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 100%;
+  position: relative;
 }
 
 @media (min-width: 576px) {
@@ -1774,6 +1775,14 @@ button:focus {
   background-repeat: no-repeat;
   background-position-x: 99%;
   background-position-y: 8px;
+}
+
+.formulaire__input + .error {
+  text-align: left;
+  position: relative;
+  top: -15px;
+  margin-bottom: -15px;
+  padding-left: 20px;
 }
 
 .formulaire__nav-btn {
@@ -1848,6 +1857,12 @@ button:focus {
   border-color: #2ab7c0;
 }
 
+.formulaire__radio input + .error {
+  position: absolute;
+  bottom: -25px;
+  left: 20px;
+}
+
 .formulaire__text {
   font-size: 20px;
   margin-bottom: 15px;
@@ -1883,5 +1898,16 @@ button:focus {
     -webkit-transform: translateX(-10px);
             transform: translateX(-10px);
   }
+}
+
+.formulaire__input + .error, .formulaire__radio input + .error {
+  color: #fe4040;
+}
+
+.formulaire__input + .error img, .formulaire__radio input + .error img {
+  width: 12px;
+  position: relative;
+  top: -2px;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */
