@@ -15,6 +15,12 @@
       font-size: 35px;
     }
   }
+  &--3 {
+    font-size: 20px;
+    @include media-breakpoint-up(lg) {
+      font-size: 25px;
+    }
+  }
   &__emoji {
     font-size: 40px;
     position: relative;
@@ -120,6 +126,11 @@
     & > .c-card-triangle__content {
       @extend %block-shadow;
     }
+  }
+  &__img {
+    @extend %block-shadow;
+    position: relative;
+    max-width: 100%;
   }
   &__bg {
     position: absolute;
@@ -245,4 +256,5 @@
 .c-block {
   padding: 30px;
   background-color: $grey;
+  margin-bottom: 10px;
 }

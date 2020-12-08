@@ -256,20 +256,20 @@
       &--blue-dark {
         .mon-parcours {
           &__heading {
-            color: #2a90c0;
+            color: $blue-start;
           }
           &__aside {
-            background-color: #2a90c0;
+            background-color: $blue-start;
           }
         }
       }
       &--blue-darker {
         .mon-parcours {
           &__heading {
-            color: #104c85;
+            color: $blue-smart;
           }
           &__aside {
-            background-color: #104c85;
+            background-color: $blue-smart;
           }
         }
       }

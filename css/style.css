@@ -34,7 +34,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+label {
   margin: 0;
   padding: 0;
 }
@@ -96,6 +97,10 @@ button:focus {
   outline: none;
 }
 
+strong {
+  font-weight: 700;
+}
+
 .c-heading {
   font-weight: 700;
 }
@@ -117,6 +122,16 @@ button:focus {
 @media (min-width: 992px) {
   .c-heading--2 {
     font-size: 35px;
+  }
+}
+
+.c-heading--3 {
+  font-size: 20px;
+}
+
+@media (min-width: 992px) {
+  .c-heading--3 {
+    font-size: 25px;
   }
 }
 
@@ -194,7 +209,7 @@ button:focus {
   font-size: 9px;
 }
 
-.c-card, .c-card-triangle:not(.c-card-triangle--no-hover):hover > .c-card-triangle__content, .c-card-triangle__content, .metiers .hero__img {
+.c-card, .c-card-triangle:not(.c-card-triangle--no-hover):hover > .c-card-triangle__content, .c-card-triangle__img, .c-card-triangle__content, .metiers .hero__img {
   -webkit-box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 15px 15px 35px 0px rgba(0, 0, 0, 0.2);
 }
@@ -256,6 +271,11 @@ button:focus {
 .c-card-triangle:not(.c-card-triangle--no-hover):hover {
   -webkit-transform: translateY(-5px);
           transform: translateY(-5px);
+}
+
+.c-card-triangle__img {
+  position: relative;
+  max-width: 100%;
 }
 
 .c-card-triangle__bg {
@@ -435,6 +455,7 @@ button:focus {
 .c-block {
   padding: 30px;
   background-color: #eef4f2;
+  margin-bottom: 10px;
 }
 
 .header {
@@ -1847,6 +1868,7 @@ button:focus {
 
 .formulaire__radio {
   cursor: pointer;
+  margin-bottom: 5px;
 }
 
 .formulaire__radio span {
@@ -1964,24 +1986,109 @@ button:focus {
 }
 
 .offre .hero {
+  font-size: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .offre .hero {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media (min-width: 1200px) {
+  .offre .hero {
+    padding-right: 300px;
+  }
 }
 
 .offre .hero > *:first-child {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 170px;
-          flex: 0 0 170px;
-  margin-right: 40px;
+      -ms-flex: 0 0 210px;
+          flex: 0 0 210px;
+  margin: 0 0 40px 0;
+}
+
+@media (min-width: 768px) {
+  .offre .hero > *:first-child {
+    margin: 0 60px 0 0;
+  }
 }
 
 .offre .hero .c-card-triangle__bg {
   height: 140px;
 }
 
-.offre .hero__img {
+.offre .hero__label-icon {
+  width: 20px;
+  margin-right: 5px;
   position: relative;
-  max-width: 100%;
+  bottom: 2px;
+}
+
+.offre .hero__label {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  text-transform: uppercase;
+  color: #104c85;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.offre .parcours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 768px) {
+  .offre .parcours {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.offre .parcours > *:first-child {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 210px;
+          flex: 0 0 210px;
+  margin: 0 0 40px 0;
+}
+
+@media (min-width: 768px) {
+  .offre .parcours > *:first-child {
+    margin: 0 60px 0 0;
+  }
+}
+
+.offre .parcours .c-heading {
+  color: #104c85;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.offre .parcours__marquer {
+  font-size: 20px;
 }
 /*# sourceMappingURL=style.css.map */

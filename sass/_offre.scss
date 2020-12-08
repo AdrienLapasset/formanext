@@ -1,16 +1,59 @@
 .offre {
   .hero {
+    font-size: 16px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+    @include media-breakpoint-up(xl) {
+      padding-right: 300px;
+    }
     & > *:first-child {
-      flex: 0 0 170px;
-      margin-right: 40px;
+      flex: 0 0 210px;
+      margin: 0 0 40px 0;
+      @include media-breakpoint-up(md) {
+        margin: 0 60px 0 0;
+      }
     }
     .c-card-triangle__bg {
       height: 140px;
     }
-    &__img {
+    &__label-icon {
+      width: 20px;
+      margin-right: 5px;
       position: relative;
-      max-width: 100%;
+      bottom: 2px;
+    }
+    &__label {
+      flex-shrink: 0;
+      text-transform: uppercase;
+      color: $blue-smart;
+      font-weight: 700;
+      font-size: 18px;
+    }
+  }
+  .parcours {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-up(md) {
+      flex-direction: row;
+    }
+    & > *:first-child {
+      flex: 0 0 210px;
+      margin: 0 0 40px 0;
+      @include media-breakpoint-up(md) {
+        margin: 0 60px 0 0;
+      }
+    }
+    .c-heading {
+      color: $blue-smart;
+      flex-shrink: 0;
+    }
+    &__marquer {
+      font-size: 20px;
     }
   }
 }
