@@ -35,7 +35,8 @@ h3,
 h4,
 h5,
 h6,
-label {
+label,
+ul {
   margin: 0;
   padding: 0;
 }
@@ -2090,5 +2091,99 @@ strong {
 
 .offre .parcours__marquer {
   font-size: 20px;
+}
+
+.offre .programme {
+  height: 597px;
+}
+
+.offre .programme__title {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.offre .programme__toggler {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  margin-top: 20px;
+  outline: none;
+  padding-right: 10px;
+}
+
+.offre .programme__toggler:not(:first-child) {
+  padding-top: 20px;
+  border-top: solid 1px black;
+}
+
+.offre .programme__toggler.ui-state-active .programme__btn:before {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.offre .programme__toggler.ui-state-active .programme__btn:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.offre .programme__section {
+  padding: 20px 20px 0;
+}
+
+.offre .programme__btn {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  margin-left: auto;
+  border: 2px solid black;
+  border-radius: 40px;
+  /* Vertical line */
+  /* horizontal line */
+}
+
+.offre .programme__btn:before, .offre .programme__btn:after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  -webkit-transition: -webkit-transform 0.25s ease-out;
+  transition: -webkit-transform 0.25s ease-out;
+  transition: transform 0.25s ease-out;
+  transition: transform 0.25s ease-out, -webkit-transform 0.25s ease-out;
+}
+
+.offre .programme__btn:before {
+  top: 5px;
+  left: 50%;
+  width: 2px;
+  height: 24px;
+  margin-left: -1px;
+}
+
+.offre .programme__btn:after {
+  top: 50%;
+  left: 5px;
+  width: 24px;
+  height: 2px;
+  margin-top: -1px;
+}
+
+.offre .programme__list-item {
+  margin-bottom: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.offre .programme__list-icon {
+  position: relative;
+  top: 5px;
+  margin-right: 5px;
 }
 /*# sourceMappingURL=style.css.map */

@@ -9,7 +9,7 @@
   <meta name="description" content="">
   <link rel="icon" type="image/png" href="/assets/imgs/favicon.png">
   <link rel="stylesheet" href="modules/bootstrap-4.5.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="modules/jquery-ui-1.12.1.custom/jquery-ui.min.css">
+  <!-- <link rel="stylesheet" href="modules/jquery-ui-1.12.1.custom/jquery-ui.min.css"> -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
@@ -135,7 +135,7 @@
       <!-- Parcours -->
       <section class="c-block parcours">
         <div>
-          <h3 class="c-heading c-heading--3">Parcours Smart</h3>
+          <h2 class="c-heading c-heading--3">Parcours Smart</h2>
           <label class="c-tag">
             <img class="mon-parcours__icon-time" src="/assets/icons/time.svg" alt="Durée">
             <span>6 à 12 mois</span>
@@ -153,41 +153,130 @@
       </section>
 
       <!-- Programme -->
-      <section class="c-block parcours" id="accordion">
-        <h3 class="c-heading c-heading--3">Programme</h3>
-        <h3>Section 1</h3>
-        <div>
-          <p>
-            Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
-            ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
-            amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut
-            odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
-          </p>
+      <section class="c-block programme">
+        <h2 class="c-heading c-heading--3 red">
+          <img src="/assets/icons/computer.svg" alt="">
+          Programme</h2>
+        <div id="accordion">
+          <div class="programme__toggler">
+            <h3 class="programme__title">Business development & Ingénierie d’affaire</h3>
+            <button class="programme__btn"></button>
+          </div>
+          <div class="programme__section">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Concevoir et développer une stratégie marketing cross-canal
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Construire et déployer sa stratégie commerciale
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Dashboarding et Outils de Pilotage Commerciaux
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Droit commercial
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Exécuter la prospection à l'ère de l'automatisation dans un monde connecté
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Gestion des réclamations clients
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Inbound Marketing
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Key account management : gérer et développer ses comptes stratégiques
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Maîtriser le Funnel Sales BtoB
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Manager les Intermédiaires De La Vente
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Marketing Digital
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Marketing Stratégique
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Mesure de la satisfaction client
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Organiser efficacement la prospection commerciale
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Piloter et booster la performance commerciale
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Techniques de commerce international
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Techniques de négociation commerciale
+                  </li>
+                  <li class="programme__list-item">
+                    <img class="programme__list-icon" src="/assets/icons/chevron-blue.svg" alt="">
+                    Vendre en environnement complexe
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="programme__toggler">
+            <h3 class="programme__title">Management commercial</h3>
+            <button class="programme__btn"></button>
+          </div>
+          <div class="programme__section">
+            <p>
+              Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+              purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+              velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
+              suscipit faucibus urna.
+            </p>
+          </div>
+          <div class="programme__toggler">
+            <h3 class="programme__title">Stratégie d'entreprise et management dans un monde numérique</h3>
+            <button class="programme__btn"></button>
+          </div>
+          <div class="programme__section">
+            <p>
+              Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+              Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+              ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
+              lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
+            </p>
+          </div>
         </div>
-        <h3>Section 2</h3>
-        <div>
-          <p>
-            Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
-            purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
-            velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In
-            suscipit faucibus urna.
-          </p>
-        </div>
-        <h3>Section 3</h3>
-        <div>
-          <p>
-            Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
-            Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
-            ac tellus pellentesque semper. Sed ac felis. Sed commodo, magna quis
-            lacinia ornare, quam ante aliquam nisi, eu iaculis leo purus venenatis dui.
-          </p>
-          <ul>
-            <li>List item one</li>
-            <li>List item two</li>
-            <li>List item three</li>
-          </ul>
-        </div>
+      </section>
 
+      <!-- Votre parcours -->
+      <section class="c-block votre-parcours">
+        Votre parcours de formation financé à 100%
+        <a href="" class="c-btn c-btn--blue">Testez votre éligibilité</a>
       </section>
 
     </div>
@@ -228,8 +317,8 @@
 </body>
 
 <!-- JS Imports -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="modules/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 <script src="modules/bootstrap-4.5.3/dist/js/bootstrap.bundle.min.js"></script>
 <script src="script.js"></script>
 
