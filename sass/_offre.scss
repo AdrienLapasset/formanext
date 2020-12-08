@@ -1,4 +1,16 @@
 .offre {
+  &--smart {
+    .hero__label {
+      color: $blue-smart;
+    }
+    .parcours__heading {
+      color: $blue-smart;
+    }
+    .c-tag {
+      color: $blue-smart;
+      border-color: $blue-smart;
+    }
+  }
   .hero {
     font-size: 16px;
     display: flex;
@@ -29,11 +41,11 @@
     &__label {
       flex-shrink: 0;
       text-transform: uppercase;
-      color: $blue-smart;
       font-weight: 700;
       font-size: 18px;
     }
   }
+
   .parcours {
     display: flex;
     flex-direction: column;
@@ -55,7 +67,16 @@
     &__marquer {
       font-size: 20px;
     }
+    .c-tag {
+      font-weight: 700;
+      font-size: 15px;
+      margin-top: 10px;
+    }
+    &__icon {
+      margin-right: 5px;
+    }
   }
+
   .programme {
     height: 597px;
     &__title {
@@ -130,5 +151,13 @@
     }
   }
   .votre-parcours {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 700;
+    color: white;
+    background-color: $red;
   }
 }

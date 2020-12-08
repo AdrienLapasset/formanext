@@ -1986,6 +1986,19 @@ strong {
   }
 }
 
+.offre--smart .hero__label {
+  color: #104c85;
+}
+
+.offre--smart .parcours__heading {
+  color: #104c85;
+}
+
+.offre--smart .c-tag {
+  color: #104c85;
+  border-color: #104c85;
+}
+
 .offre .hero {
   font-size: 16px;
   display: -webkit-box;
@@ -2043,7 +2056,6 @@ strong {
   -ms-flex-negative: 0;
       flex-shrink: 0;
   text-transform: uppercase;
-  color: #104c85;
   font-weight: 700;
   font-size: 18px;
 }
@@ -2091,6 +2103,16 @@ strong {
 
 .offre .parcours__marquer {
   font-size: 20px;
+}
+
+.offre .parcours .c-tag {
+  font-weight: 700;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.offre .parcours__icon {
+  margin-right: 5px;
 }
 
 .offre .programme {
@@ -2185,5 +2207,23 @@ strong {
   position: relative;
   top: 5px;
   margin-right: 5px;
+}
+
+.offre .votre-parcours {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  color: white;
+  background-color: #fe4040;
 }
 /*# sourceMappingURL=style.css.map */
