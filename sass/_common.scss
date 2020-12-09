@@ -130,7 +130,7 @@
   &__img {
     @extend %block-shadow;
     position: relative;
-    max-width: 100%;
+    width: 100%;
   }
   &__bg {
     position: absolute;
