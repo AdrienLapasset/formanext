@@ -359,7 +359,7 @@ strong {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 45px;
-  padding: 10px 30px;
+  padding: 10px 28px;
   font-size: 15px;
   text-align: center;
   -webkit-transition: -webkit-box-shadow 0.5s, -webkit-transform 0.5s;
@@ -1987,17 +1987,92 @@ strong {
   }
 }
 
+.offre--fast .hero__label {
+  color: #2ab7c0;
+}
+
+.offre--fast .hero__label-icon {
+  fill: #2ab7c0;
+}
+
+.offre--fast .parcours__heading {
+  color: #2ab7c0;
+}
+
+.offre--fast .parcours__icon {
+  fill: #2ab7c0;
+}
+
+.offre--fast .c-tag {
+  color: #2ab7c0;
+  border-color: #2ab7c0;
+}
+
+.offre--fast .c-btn {
+  background-color: #2ab7c0;
+}
+
+.offre--start .hero__label {
+  color: #2a90c0;
+}
+
+.offre--start .hero__label-icon {
+  fill: #2a90c0;
+}
+
+.offre--start .parcours__heading {
+  color: #2a90c0;
+}
+
+.offre--start .parcours__icon {
+  fill: #2a90c0;
+}
+
+.offre--start .c-tag {
+  color: #2a90c0;
+  border-color: #2a90c0;
+}
+
+.offre--start .c-btn {
+  background-color: #2a90c0;
+}
+
 .offre--smart .hero__label {
   color: #104c85;
+}
+
+.offre--smart .hero__label-icon {
+  fill: #104c85;
 }
 
 .offre--smart .parcours__heading {
   color: #104c85;
 }
 
+.offre--smart .parcours__icon {
+  fill: #104c85;
+}
+
 .offre--smart .c-tag {
   color: #104c85;
   border-color: #104c85;
+}
+
+.offre--smart .c-btn {
+  background-color: #104c85;
+}
+
+.offre .c-heading--3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.offre .c-heading--3 img {
+  margin-right: 5px;
 }
 
 .offre .hero {
@@ -2030,20 +2105,26 @@ strong {
 }
 
 .offre .hero > *:first-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 210px;
-          flex: 0 0 210px;
   margin: 0 0 40px 0;
 }
 
 @media (min-width: 768px) {
   .offre .hero > *:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 210px;
+            flex: 0 0 210px;
     margin: 0 60px 0 0;
   }
 }
 
-.offre .hero .c-card-triangle__bg {
-  height: 140px;
+.offre .hero .c-card-triangle {
+  max-width: 300px;
+}
+
+@media (min-width: 768px) {
+  .offre .hero .c-card-triangle__bg {
+    height: 180px;
+  }
 }
 
 .offre .hero__label-icon {
@@ -2084,20 +2165,19 @@ strong {
 }
 
 .offre .parcours > *:first-child {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 210px;
-          flex: 0 0 210px;
-  margin: 0 0 40px 0;
+  margin: 0 0 20px 0;
 }
 
 @media (min-width: 768px) {
   .offre .parcours > *:first-child {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 210px;
+            flex: 0 0 210px;
     margin: 0 60px 0 0;
   }
 }
 
 .offre .parcours .c-heading {
-  color: #104c85;
   -ms-flex-negative: 0;
       flex-shrink: 0;
 }
@@ -2118,13 +2198,8 @@ strong {
 
 @media (min-width: 992px) {
   .offre .programme {
-    height: 597px;
+    height: 567px;
   }
-}
-
-.offre .programme__title {
-  font-weight: 700;
-  font-size: 18px;
 }
 
 .offre .programme__toggler {
@@ -2155,19 +2230,37 @@ strong {
           transform: rotate(180deg);
 }
 
+.offre .programme__title {
+  font-weight: 700;
+  font-size: 14px;
+  padding-right: 15px;
+}
+
+@media (min-width: 768px) {
+  .offre .programme__title {
+    font-size: 18px;
+  }
+}
+
 .offre .programme__section {
-  padding: 20px 20px 0;
+  padding: 20px 0;
+}
+
+@media (min-width: 576px) {
+  .offre .programme__section {
+    padding: 20px 20px 0;
+  }
 }
 
 .offre .programme__btn {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
   position: relative;
   width: 38px;
   height: 38px;
   margin-left: auto;
   border: 2px solid black;
   border-radius: 40px;
-  /* Vertical line */
-  /* horizontal line */
 }
 
 .offre .programme__btn:before, .offre .programme__btn:after {
@@ -2210,6 +2303,7 @@ strong {
   position: relative;
   top: 5px;
   margin-right: 5px;
+  width: 15px;
 }
 
 .offre .votre-parcours {

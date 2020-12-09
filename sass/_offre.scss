@@ -1,14 +1,43 @@
 .offre {
-  &--smart {
-    .hero__label {
-      color: $blue-smart;
+  @mixin offre-color($color) {
+    .hero {
+      &__label {
+        color: $color;
+      }
+      &__label-icon {
+        fill: $color;
+      }
     }
-    .parcours__heading {
-      color: $blue-smart;
+    .parcours {
+      &__heading {
+        color: $color;
+      }
+      &__icon {
+        fill: $color;
+      }
     }
     .c-tag {
-      color: $blue-smart;
-      border-color: $blue-smart;
+      color: $color;
+      border-color: $color;
+    }
+    .c-btn {
+      background-color: $color;
+    }
+  }
+  &--fast {
+    @include offre-color($blue);
+  }
+  &--start {
+    @include offre-color($blue-start);
+  }
+  &--smart {
+    @include offre-color($blue-smart);
+  }
+  .c-heading--3 {
+    display: flex;
+    align-items: center;
+    img {
+      margin-right: 5px;
     }
   }
   .hero {
@@ -23,14 +52,19 @@
       padding-right: 300px;
     }
     & > *:first-child {
-      flex: 0 0 210px;
       margin: 0 0 40px 0;
       @include media-breakpoint-up(md) {
+        flex: 0 0 210px;
         margin: 0 60px 0 0;
       }
     }
+    .c-card-triangle {
+      max-width: 300px;
+    }
     .c-card-triangle__bg {
-      height: 140px;
+      @include media-breakpoint-up(md) {
+        height: 180px;
+      }
     }
     &__label-icon {
       width: 20px;
@@ -54,14 +88,13 @@
       flex-direction: row;
     }
     & > *:first-child {
-      flex: 0 0 210px;
-      margin: 0 0 40px 0;
+      margin: 0 0 20px 0;
       @include media-breakpoint-up(md) {
+        flex: 0 0 210px;
         margin: 0 60px 0 0;
       }
     }
     .c-heading {
-      color: $blue-smart;
       flex-shrink: 0;
     }
     &__marquer {
@@ -79,11 +112,7 @@
 
   .programme {
     @include media-breakpoint-up(lg) {
-      height: 597px;
-    }
-    &__title {
-      font-weight: 700;
-      font-size: 18px;
+      height: 567px;
     }
     &__toggler {
       display: flex;
@@ -107,10 +136,22 @@
         }
       }
     }
+    &__title {
+      font-weight: 700;
+      font-size: 14px;
+      padding-right: 15px;
+      @include media-breakpoint-up(md) {
+        font-size: 18px;
+      }
+    }
     &__section {
-      padding: 20px 20px 0;
+      padding: 20px 0;
+      @include media-breakpoint-up(sm) {
+        padding: 20px 20px 0;
+      }
     }
     &__btn {
+      flex-shrink: 0;
       position: relative;
       width: 38px;
       height: 38px;
@@ -124,7 +165,6 @@
         background-color: black;
         transition: transform 0.25s ease-out;
       }
-      /* Vertical line */
       &:before {
         top: 5px;
         left: 50%;
@@ -132,7 +172,6 @@
         height: 24px;
         margin-left: -1px;
       }
-      /* horizontal line */
       &:after {
         top: 50%;
         left: 5px;
@@ -150,6 +189,7 @@
       position: relative;
       top: 5px;
       margin-right: 5px;
+      width: 15px;
     }
   }
   .votre-parcours {
