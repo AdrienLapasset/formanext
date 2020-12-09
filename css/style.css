@@ -266,7 +266,7 @@ strong {
 
 @media (min-width: 576px) {
   .c-card-triangle {
-    width: 360px;
+    max-width: 360px;
   }
 }
 
@@ -925,13 +925,6 @@ strong {
 
 .home .nos-formations__cards .c-card-triangle {
   margin: 0 auto 40px;
-}
-
-@media (min-width: 992px) {
-  .home .nos-formations__cards .c-card-triangle {
-    display: inline-block;
-    margin-left: 50px;
-  }
 }
 
 .home .notre-priorite,
