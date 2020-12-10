@@ -138,6 +138,7 @@
     }
   }
   .c-card {
+    margin-bottom: 15px;
     @include media-breakpoint-up(lg) {
       display: flex;
       align-items: center;

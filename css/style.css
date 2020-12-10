@@ -2703,6 +2703,10 @@ strong {
   }
 }
 
+.liste-recherche .c-card {
+  margin-bottom: 15px;
+}
+
 @media (min-width: 992px) {
   .liste-recherche .c-card {
     display: -webkit-box;
