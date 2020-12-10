@@ -30,6 +30,7 @@
 
 // TAGS
 .c-tag {
+  font-weight: 500;
   border: 1px solid black;
   border-radius: 0;
   font-size: 12px;
@@ -195,6 +196,9 @@
   transition: box-shadow 0.5s, transform 0.5s;
   & > * {
     flex: 0 0 auto;
+  }
+  &--small {
+    padding: 7px 15px;
   }
   &:not(.c-btn--small) {
     @include media-breakpoint-up(sm) {

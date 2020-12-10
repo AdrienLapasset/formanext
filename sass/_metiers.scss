@@ -4,7 +4,6 @@
       font-size: 30px;
     }
   }
-
   .hero {
     &__devenez {
       font-size: 32px;
@@ -14,6 +13,7 @@
       margin-bottom: 30px;
     }
     .c-card-triangle {
+      max-width: 100%;
       @include media-breakpoint-up(sm) {
         width: auto;
       }
@@ -22,6 +22,65 @@
       position: relative;
       max-width: 100%;
       @extend %block-shadow;
+    }
+  }
+
+  .parcours {
+    margin-top: 30px;
+    &--start {
+      .parcours__icon-container {
+        background-color: $blue-start;
+      }
+      .parcours__title {
+        color: $blue-start;
+      }
+    }
+    &--smart {
+      .parcours__icon-container {
+        background-color: $blue-smart;
+      }
+      .parcours__title {
+        color: $blue-smart;
+      }
+    }
+    .c-heading {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    &__container {
+      margin-bottom: 60px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0px;
+      }
+    }
+    &__icon-container {
+      width: 50px;
+      height: 50px;
+      background-color: $blue;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__icon {
+      height: 30px;
+      max-width: 28px;
+    }
+    &__title {
+      margin-top: 5px;
+      font-size: 24px;
+      font-weight: 700;
+      color: $blue;
+    }
+    .c-tag {
+      margin: 10px 0;
+    }
+    .c-btn {
+      margin-top: 10px;
     }
   }
 
