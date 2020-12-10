@@ -253,6 +253,10 @@ strong {
   margin-bottom: 10px;
 }
 
+.c-card--boost .c-tag__icon {
+  width: 11px;
+}
+
 .c-card-triangle {
   display: block;
   position: relative;
@@ -1673,10 +1677,6 @@ strong {
           flex-direction: column;
 }
 
-.metiers .coup-de-boost .c-tag__icon {
-  width: 11px;
-}
-
 .formulaire {
   text-align: center;
 }
@@ -2392,7 +2392,7 @@ strong {
   font-weight: 500;
 }
 
-.liste-metiers .hero {
+.page-list .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2400,11 +2400,11 @@ strong {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 992px) {
-  .liste-metiers .hero {
-    margin-bottom: 60px;
+  .page-list .hero {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -2412,37 +2412,37 @@ strong {
   }
 }
 
-.liste-metiers .hero > *:first-child {
+.page-list .hero > *:first-child {
   -webkit-box-flex: unset;
       -ms-flex: unset;
           flex: unset;
 }
 
 @media (min-width: 992px) {
-  .liste-metiers .hero > *:first-child {
+  .page-list .hero > *:first-child {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 62%;
             flex: 0 0 62%;
   }
 }
 
-.liste-metiers .hero__heading {
+.page-list .hero__heading {
   font-size: 42px;
   margin: 20px 0 20px;
 }
 
 @media (min-width: 992px) {
-  .liste-metiers .hero__heading {
+  .page-list .hero__heading {
     margin: 60px 0 20px;
   }
 }
 
-.liste-metiers .hero__text {
+.page-list .hero__text {
   font-size: 18px;
   margin-bottom: 30px;
 }
 
-.liste-metiers .hero__img-container {
+.page-list .hero__img-container {
   z-index: -1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2452,56 +2452,50 @@ strong {
           justify-content: center;
 }
 
-.liste-metiers .hero__img {
+.page-list .hero__img {
   max-height: 200px;
   max-width: 100%;
 }
 
 @media (min-width: 768px) {
-  .liste-metiers .hero__img {
+  .page-list .hero__img {
     max-height: 300px;
   }
 }
 
 @media (min-width: 992px) {
-  .liste-metiers .hero__img {
+  .page-list .hero__img {
     max-height: unset;
     -webkit-transform: translateX(-30px);
             transform: translateX(-30px);
   }
 }
 
-.liste-metiers .tous-nos-metiers {
+.page-list .tous-nos-metiers {
   padding: 150px 0;
   margin: -120px 0 100px;
 }
 
 @media (min-width: 576px) {
-  .liste-metiers .tous-nos-metiers {
+  .page-list .tous-nos-metiers {
     margin-top: -100px;
     padding: 130px 0;
   }
 }
 
 @media (min-width: 768px) {
-  .liste-metiers .tous-nos-metiers {
+  .page-list .tous-nos-metiers {
     margin-top: -60px;
     padding: 80px 0;
   }
 }
 
-@media (min-width: 992px) {
-  .liste-metiers .tous-nos-metiers {
-    margin-top: -100px;
-  }
-}
-
-.liste-metiers .tous-nos-metiers__heading {
+.page-list .tous-nos-metiers__heading {
   font-size: 18px;
-  margin-bottom: 30px;
+  margin-right: 5px;
 }
 
-.liste-metiers .tous-nos-metiers__bg {
+.page-list .tous-nos-metiers__bg {
   background-image: url("/assets/imgs/nos-formations-metiers-bg.svg");
   background-size: cover;
   background-position: top center;
@@ -2509,7 +2503,28 @@ strong {
   margin: auto;
 }
 
-.liste-metiers .tous-nos-metiers__cards-container .c-card-triangle {
+.page-list .tous-nos-metiers__cards-container .c-card-triangle {
+  margin: 0 auto 40px;
+}
+
+.page-list .tous-nos-boosts {
+  margin-bottom: 30px;
+  background-color: #eef4f2;
+  padding: 40px 15px 15px;
+}
+
+@media (min-width: 576px) {
+  .page-list .tous-nos-boosts {
+    padding: 40px 60px;
+  }
+}
+
+.page-list .tous-nos-boosts__heading {
+  font-size: 18px;
+  margin-right: 5px;
+}
+
+.page-list .tous-nos-boosts__cards-container .c-card {
   margin: 0 auto 40px;
 }
 /*# sourceMappingURL=style.css.map */
