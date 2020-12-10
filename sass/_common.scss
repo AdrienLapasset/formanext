@@ -103,16 +103,14 @@
   }
   .c-tag {
     margin-bottom: 10px;
+    &__icon {
+      width: 11px;
+    }
   }
   &__heading {
     font-size: 22px;
     font-weight: 700;
     margin-bottom: 10px;
-  }
-  &--boost {
-    .c-tag__icon {
-      width: 11px;
-    }
   }
 }
 
@@ -198,8 +196,10 @@
   & > * {
     flex: 0 0 auto;
   }
-  @include media-breakpoint-up(sm) {
-    font-size: 20px;
+  &:not(.c-btn--small) {
+    @include media-breakpoint-up(sm) {
+      font-size: 20px;
+    }
   }
   &:hover {
     box-shadow: 5px 5px 35px 0px rgba(0, 0, 0, 0.3);
