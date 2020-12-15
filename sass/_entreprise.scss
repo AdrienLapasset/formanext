@@ -1,0 +1,104 @@
+.entreprise {
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    &__text {
+      margin: 20px 0;
+      font-size: 18px;
+    }
+  }
+  .c-card-triangle {
+    max-width: unset;
+  }
+  .recrutez {
+    &__step-container {
+      margin-top: 30px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include media-breakpoint-up(lg) {
+        display: block;
+        margin-top: 60px;
+        height: 450px;
+        position: relative;
+        background-image: url("/assets/imgs/recrutez-fond.png");
+        background-size: 80%;
+        background-repeat: no-repeat;
+        background-position: top center;
+      }
+      @include media-breakpoint-up(xl) {
+        background-size: 65%;
+      }
+    }
+    &__step {
+      display: flex;
+      max-width: 360px;
+      align-items: center;
+      margin-bottom: 30px;
+      @include media-breakpoint-up(lg) {
+        position: absolute;
+        margin-bottom: 0;
+      }
+      &:nth-child(1) {
+        left: 100px;
+        @include media-breakpoint-up(xl) {
+          left: 200px;
+        }
+      }
+      &:nth-child(2) {
+        top: 100px;
+        right: 100px;
+        @include media-breakpoint-up(xl) {
+          right: 180px;
+        }
+      }
+      &:nth-child(5) {
+        top: 150px;
+        @include media-breakpoint-up(xl) {
+          left: 0px;
+        }
+      }
+      &:nth-child(3) {
+        top: 230px;
+        right: 0px;
+        @include media-breakpoint-up(xl) {
+          right: 50px;
+        }
+      }
+      &:nth-child(4) {
+        top: 300px;
+        left: 100px;
+        @include media-breakpoint-up(xl) {
+          left: 200px;
+        }
+      }
+    }
+    &__icon-container {
+      flex-shrink: 0;
+      width: 70px;
+      height: 70px;
+      background-color: $blue;
+      border-radius: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &__icon {
+      width: 30px;
+    }
+    &__step-text {
+      margin-left: 20px;
+      h2 {
+        font-size: 20px;
+        font-weight: 700;
+        margin-bottom: 5px;
+        span {
+          color: $blue;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+}

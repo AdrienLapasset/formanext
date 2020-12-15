@@ -9,10 +9,22 @@
       font-size: 55px;
     }
   }
+  &--1sm {
+    font-size: 32px;
+    @include media-breakpoint-up(md) {
+      font-size: 42px;
+    }
+  }
   &--2 {
     font-size: 24px;
     @include media-breakpoint-up(lg) {
       font-size: 35px;
+    }
+  }
+  &--2sm {
+    font-size: 24px;
+    @include media-breakpoint-up(lg) {
+      font-size: 30px;
     }
   }
   &--3 {
@@ -264,7 +276,10 @@
 
 // BLOCK
 .c-block {
-  padding: 30px;
+  padding: 15px;
   background-color: $grey;
   margin-bottom: 15px;
+  @include media-breakpoint-up(sm) {
+    padding: 30px;
+  }
 }
