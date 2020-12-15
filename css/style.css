@@ -1340,14 +1340,16 @@ strong {
           flex: 0 0 50%;
 }
 
-.metiers .mes-missions__list-item {
+.metiers .mes-missions__list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 10px;
 }
 
-.metiers .mes-missions__list-icon {
+.metiers .mes-missions__list li:before {
+  content: url("/assets/icons/chevron-red.svg");
+  display: block;
   margin-right: 15px;
 }
 
