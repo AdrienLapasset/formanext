@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Formanext</title>
+  <meta name="description" content="">
+  <link rel="icon" type="image/png" href="/assets/imgs/favicon.png">
+  <link rel="stylesheet" href="modules/bootstrap-4.5.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="header__contact">
+      <div class="container text-right py-1 d-flec align-items-center">
+        <a href="tel:0123456789">
+          <img class="mr-1" src="assets/icons/phone.svg" alt="téléphone">
+          01 23 45 67 89
+        </a>
+        <a href="mailto:formanext@gmail.com">
+          <img class="ml-4 mr-1" src="assets/icons/email.svg" alt="email">
+          Contact
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light px-0">
+        <a class="navbar-brand" href="index.html">
+          <img class="img-fluid" src="assets/logos/formanext.svg" alt="Logo Formanext">
+        </a>
+
+        <!-- Search bar mobile -->
+        <div class="d-lg-none ml-auto">
+          <div class="search">
+            <button class="search__btn">
+              <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.63 43.63">
+                <path d="M21,3a17,17,0,0,0,0,34,16.79,16.79,0,0,0,9.09-2.66L42.38,46.62l4.24-4.24L34.5,30.28A17,17,0,0,0,21,3Zm0,4A13,13,0,1,1,8,20,13,13,0,0,1,21,7Z" transform="translate(-4 -3)" />
+              </svg>
+            </button>
+            <form class="search__form">
+              <input class="search__input" placeholder="Tapez un mot clé" />
+              <img class="search__clear" src="/assets/icons/clear-search-btn.png" alt="effacer">
+            </form>
+          </div>
+        </div>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-c-tag="Toggle navigation">
+          <img src="/assets/icons/menu.svg" alt="Menu">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <!-- Container -->
+          <div class="container">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">
+                  Qui sommes nous
+                  <img class="nav-link__icon" src="assets/icons/triangle.svg" alt="flèche">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="liste-metiers.html">
+                  Métiers
+                  <img class="nav-link__icon" src="assets/icons/triangle.svg" alt="flèche">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  Events
+                  <img class="nav-link__icon" src="assets/icons/triangle.svg" alt="flèche">
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link--red" href="#">
+                  Entreprise
+                  <svg class="nav-link__icon" width="24px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 332 143">
+                    <polyline points="332 62 0 0 58 143" />
+                  </svg>
+                </a>
+              </li>
+
+              <!-- Search bar Desktop -->
+              <li class="nav-item d-none d-lg-block">
+                <div class="search">
+                  <button class="search__btn">
+                    <svg width="20px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 42.63 43.63">
+                      <path d="M21,3a17,17,0,0,0,0,34,16.79,16.79,0,0,0,9.09-2.66L42.38,46.62l4.24-4.24L34.5,30.28A17,17,0,0,0,21,3Zm0,4A13,13,0,1,1,8,20,13,13,0,0,1,21,7Z" transform="translate(-4 -3)" />
+                    </svg>
+                  </button>
+                  <form class="search__form">
+                    <input class="search__input" placeholder="Tapez un mot clé" />
+                    <img class="search__clear" src="/assets/icons/clear-search-btn.png" alt="effacer">
+                  </form>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <!-- End container -->
+        </div>
+      </nav>
+    </div>
+  </header>
+  <!-- End Header -->
+
+  <main class="a-propos">
+
+    <div class="container">
+
+      <!-- Hero -->
+      <section class="hero">
+        <div class="row">
+          <div class="col-lg-5 order-lg-last d-flex align-items-center justify-content-center">
+            <img class="img-fluid mb-4 mb-lg-0" src="/assets/imgs/rocket.png" alt="Nos formations métiers 100% digital learning">
+          </div>
+          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start">
+            <h1 class="c-heading c-heading--1sm">
+              Notre mission : booster votre accès à l’emploi !
+            </h1>
+            <p class="hero__text">
+              Chez Formanext, nous faisons de <strong>votre retour à l’emploi notre priorité</strong> en vous proposant une sélection de formations métier particulièrement <strong>recherchées sur le marché de l’emploi.</strong>
+            </p>
+            <p class="hero__text">
+              Experts en e-learning, nous vous proposons de vous <strong>former à domicile</strong> de façon flexible, sans contrainte, et <strong>sans frais</strong> grâce à de nombreux dispositifs de financement dont le CPF.
+            </p>
+            <a href="" class="c-btn c-btn--red mt-4 mb-4 mb-lg-0">
+              <img class="mr-3" src="assets/icons/chevron-white.svg" alt="">
+              Je check mon éligibilité
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-block mt-4 pourquoi">
+        <div class="row">
+          <div class="col-lg-5">
+            <div class="c-card-triangle c-card-triangle--no-hover mb-4 mb-lg-0">
+              <img class="c-card-triangle__bg" src="/assets/imgs/card-bg-red.svg" alt="formation">
+              <img class="c-card-triangle__img" src="/assets/imgs/a-propos-hero.jpg" alt="">
+            </div>
+          </div>
+          <div class="col-lg-7 pr-lg-5">
+            <h2 class="c-heading c-heading--2sm red mb-3">Pourquoi choisir Formanext&nbsp;?</h2>
+            <p class="mb-3">
+              Près de 20 ans d’expérience :<br>Optez pour un véritable spécialiste de la formation&nbsp;!
+            </p>
+            <p class="mb-3">
+              Formanext est une marque du groupe Oktogone,société au capital de 25&nbsp;000&nbsp;000&nbsp;€.
+            </p>
+            <p>
+              Spécialiste de la formation depuis 2002 avec notamment les organismes VISIPLUS academy et ISCOD, Oktogone rassemble à travers ses filiales un réseau de plus de 20&nbsp;000 alumni.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="chiffres">
+        <h2 class="c-heading c-heading--2sm mb-4">Quelques chiffres clés</h2>
+        <div class="row">
+          <div class="col-sm-4 d-flex flex-column align-items-center mb-4">
+            <div class="chiffres__icon-container">
+              <img src="/assets/icons/icons8-diploma.svg" alt="">
+            </div>
+            <p class="chiffres__chiffre">100%</p>
+            <p class="chiffres__text">Des formations reconnues<br>
+              par les employeurs</p>
+          </div>
+          <div class="col-sm-4 d-flex flex-column align-items-center mb-4">
+            <div class="chiffres__icon-container">
+              <img src="/assets/icons/icons8-new_job.svg" alt="">
+            </div>
+            <p class="chiffres__chiffre">96,7%</p>
+            <p class="chiffres__text">
+              Taux d’emploi net à 6 mois<br> après une formation<br> diplômante (enquête 2019)
+            </p>
+          </div>
+          <div class="col-sm-4 d-flex flex-column align-items-center mb-4">
+            <div class="chiffres__icon-container">
+              <img src="/assets/icons/icons8-handshake.svg" alt="">
+            </div>
+            <p class="chiffres__chiffre">+500</p>
+            <p class="chiffres__text">Entreprises<br>partenaires</p>
+          </div>
+        </div>
+      </section>
+
+
+      <section class="notre-priorite">
+
+        <div class="c-card-triangle">
+          <img class="c-card-triangle__bg" src="/assets/imgs/card-bg-red.svg" alt="formation">
+          <div class="c-card-triangle__content">
+            <h1 class="c-heading c-heading--2">La méthode Formanext</h1>
+          </div>
+        </div>
+
+        <div class="notre-priorite__points">
+          <ol>
+            <li class="d-flex flex-column flex-sm-row align-items-center justify-content-start mb-4">
+              <aside class="notre-priorite__number">1</aside>
+              <div class="d-flex flex-column">
+                <h2 class="notre-priorite__heading">Des métiers en plein boom</h2>
+                <p>Nous ne vous proposons que des formations conçues par des professionnels experts dans leur domaine et portant sur des métiers en plein essor. Devenez un profil ultra recherché !</p>
+              </div>
+            </li>
+            <li class="d-flex flex-column flex-sm-row align-items-center justify-content-start mb-4">
+              <aside class="notre-priorite__number">2</aside>
+              <div class="d-flex flex-column">
+                <h2 class="notre-priorite__heading">Des métiers en plein boom</h2>
+                <p>Nous ne vous proposons que des formations conçues par des professionnels experts dans leur domaine et portant sur des métiers en plein essor. Devenez un profil ultra recherché !</p>
+              </div>
+            </li>
+            <li class="d-flex flex-column flex-sm-row align-items-center justify-content-start">
+              <aside class="notre-priorite__number">3</aside>
+              <div class="d-flex flex-column align-items-start">
+                <h2 class="notre-priorite__heading">Des métiers en plein boom</h2>
+                <p>Nous ne vous proposons que des formations conçues par des professionnels experts dans leur domaine et portant sur des métiers en plein essor. Devenez un profil ultra recherché !</p>
+                <a href="" class="c-btn c-btn--red mt-4">
+                  <img class="mr-3" src="/assets/icons/briefcase.svg" alt="">
+                  Voir tous nos métiers
+                </a>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- End container -->
+    </div>
+
+    <!-- Les entreprises qui recrutent -->
+    <div class="c-les-entreprises__bg mb-4">
+      <div class="container">
+        <section class="c-les-entreprises">
+          <h2 class="c-heading c-heading--2 mb-4">Les entreprises qui recrutent</h2>
+          <div class="d-flex flex-wrap justify-content-around">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-air-liquide.svg" alt="logo air liquide">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-capgemini.svg" alt="logo capgemini">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-barclays.svg" alt="logo barclays">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-ag2r.svg" alt="logo ag2r">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-truffaut.svg" alt="logo truffaut">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-alain-afflelou.svg" alt="logo alain afflelou">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-pwc.svg" alt="logo pwc">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-air-corsica.svg" alt="logo air corsica">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-alcatel.svg" alt="logo alcatel">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-qwant.svg" alt="logo qwant">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-accor-hotels.svg" alt="logo accor hotels">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-doctissimo.svg" alt="logo doctissimo">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-fedex.svg" alt="logo fedex">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-gerflor.svg" alt="logo gerflor">
+            <img class="c-les-entreprises__logo" src="/assets/logos/logo-sfr.svg" alt="logo sfr">
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <!-- Container -->
+    <div class="container overflow-hidden pb-5">
+
+      <!-- Ce qu’en pensent nos participants en formation -->
+      <section class="mt-5">
+        <h2 class="c-heading c-heading--2 mb-5 text-center">Ils nous recommandent</h2>
+        <div class="row">
+
+          <div class="col-lg-4">
+            <div class="c-comment">
+              <div class="c-comment__text">
+                ““Je suis absolument persuadé et ça a marché pour moi : la formation dans le marketing digital c'est un vrai accélérateur de carrière””
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="mx-4" src="/assets/imgs/alex-bran.png" alt="ÉDONA STURCE">
+                <p class="c-comment__person">
+                  <b>Alex BRAN</b><br>
+                  Global Account Manager<br>
+                  TRAVEL MEDIA
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <div class="c-comment">
+              <div class="c-comment__text">
+                “Cette formation avec VISIPLUS a tout changé dans ma carrière”
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="mx-4" src="/assets/imgs/anne-sophie-frossard.png" alt="ÉDONA STURCE">
+                <p class="c-comment__person">
+                  <b>Anne-Sophie Frossard</b><br>
+                  Digital Marketing Specialist<br>
+                  INSIGHT
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <div class="c-comment">
+              <div class="c-comment__text">
+                “L’ensemble des offres d’emploi proposées sur le marché exigent désormais une compétence en digital”
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="mx-4" src="/assets/imgs/marie-brech.png" alt="ÉDONA STURCE">
+                <p class="c-comment__person">
+                  <b>Marie BRECH</b><br>
+                  Chef de projet<br>
+                  communication & marketing
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <div class="c-comment">
+              <div class="c-comment__text">
+                “Continuer à se former est la clé du succès !”
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="mx-4" src="/assets/imgs/andre-lavergne.png" alt="ÉDONA STURCE">
+                <p class="c-comment__person">
+                  <b>André LAVERGNE</b><br>
+                  Ex- Directeur Marketing<br>
+                  BOUYGUES TELECOM
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <div class="c-comment">
+              <div class="c-comment__text">
+                “Les formations m’ont donné un regard nouveau sur mon business [...] cela m’a donné des idées sur ma future stratégie de commercialisation et les différents cannaux à utiliser”
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="mx-4" src="/assets/imgs/anne-sophie-frossard.png" alt="ÉDONA STURCE">
+                <p class="c-comment__person">
+                  <b>Anne-Sophie Frossard</b><br>
+                  Digital Marketing Specialist<br>
+                  INSIGHT
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mt-5 mt-lg-0">
+            <div class="c-comment">
+              <div class="c-comment__text">
+                “Je suis en recherche active d’emploi et ce cycle me permet de disposer d’une vision 360°”
+              </div>
+              <div class="d-flex align-items-center">
+                <img class="mx-4" src="/assets/imgs/martine-marin.png" alt="ÉDONA STURCE">
+                <p class="c-comment__person">
+                  <b>Martine Marin</b><br>
+                  Chef de produit
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+    <!-- End container -->
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="d-flex flex-column align-items-start">
+            <div class="mb-2">
+              <img class="footer__logo" src="assets/logos/formanext.svg" alt="logo formanext">
+            </div>
+            <p class="footer__adress mb-4">
+              7 rue Henri Bocquillon, 75015 Paris<br>
+              <img class="footer__adress__icon" src="/assets/icons/phone-no-outline.svg" alt="téléphone">
+              <a class="footer__adress__link" href="tel:0123456789">01 86 95 27 81</a>
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <a class="footer__link" href="">Métiers</a>
+          <a class="footer__link" href="">Thématiques</a>
+          <a class="footer__link" href="">Financement</a>
+          <a class="footer__link" href="">Témoignage</a>
+        </div>
+        <div class="col-lg-3">
+          <a class="footer__link" href="">Accélérateurs</a>
+          <a class="footer__link" href="">Espace entreprise</a>
+          <a class="footer__link" href="">Nous contacter</a>
+          <a class="footer__link footer__link--red" href="">Formanext Recrute&nbsp;!</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+<!-- JS Imports -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="modules/bootstrap-4.5.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+
+</html>

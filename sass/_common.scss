@@ -290,3 +290,26 @@
     padding: 30px;
   }
 }
+
+// Les entreprises logos block
+.c-les-entreprises {
+  padding: 100px 0;
+  @include media-breakpoint-up(lg) {
+    margin-top: 40px;
+  }
+  .c-heading {
+    text-align: center;
+  }
+  &__bg {
+    background-image: url("/assets/imgs/les-entreprises-bg.svg");
+    background-size: cover;
+    background-position: top center;
+    max-width: 1840px;
+    margin: auto;
+  }
+  &__logo {
+    max-width: 180px;
+    max-height: 100px;
+    margin: 20px 15px;
+  }
+}
