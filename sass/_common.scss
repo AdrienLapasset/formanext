@@ -250,11 +250,10 @@
 // COMMENTS
 .c-comment {
   position: relative;
-  margin: 0 auto;
   max-width: 310px;
+  margin: 0 auto 40px;
   @include media-breakpoint-up(lg) {
     max-width: 380px;
-    margin: 0;
     max-width: unset;
   }
   &__text {
