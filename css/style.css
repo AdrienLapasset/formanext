@@ -438,6 +438,15 @@ strong {
           box-shadow: none;
 }
 
+.c-btn--blue-smart {
+  background-color: #104c85;
+}
+
+.c-btn--blue-smart:active, .c-btn--blue-smart:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
 .c-comment {
   position: relative;
   margin: 0 auto;
@@ -2927,5 +2936,194 @@ strong {
 .entreprise .recrutez__step-text h2 span {
   color: #2ab7c0;
   margin-right: 5px;
+}
+
+.financement .hero__text {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.financement .hero__img {
+  width: 100%;
+}
+
+.financement .notre-priorite {
+  margin: 40px 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 992px) {
+  .financement .notre-priorite {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.financement .notre-priorite .c-card-triangle {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-bottom: -10px;
+}
+
+@media (min-width: 992px) {
+  .financement .notre-priorite .c-card-triangle {
+    margin-bottom: 0;
+    -webkit-transform: translateX(80px);
+            transform: translateX(80px);
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 350px;
+            flex: 0 0 350px;
+  }
+}
+
+.financement .notre-priorite .c-card-triangle__content {
+  padding: 40px;
+}
+
+.financement .notre-priorite__points {
+  background-color: #eef4f2;
+  padding: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+@media (min-width: 992px) {
+  .financement .notre-priorite__points {
+    padding: 50px 50px 50px 150px;
+  }
+}
+
+.financement .notre-priorite__number {
+  background-color: #fe4040;
+  font-size: 55px;
+  font-weight: 700;
+  color: white;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 70px;
+          flex: 0 0 70px;
+  width: 70px;
+  height: 70px;
+  border-radius: 70px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 15px;
+}
+
+@media (min-width: 576px) {
+  .financement .notre-priorite__number {
+    margin-right: 30px;
+  }
+}
+
+.financement .notre-priorite__number img {
+  width: 100%;
+  max-height: 35px;
+  max-width: 35px;
+}
+
+.financement .notre-priorite__heading {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.financement .notre-priorite .c-btn {
+  text-align: left;
+}
+
+.financement .notre-priorite .c-btn img {
+  margin-right: 10px;
+  width: 30px;
+}
+
+.financement .focus {
+  border: solid 10px #eef4f2;
+  padding: 0 15px;
+}
+
+@media (min-width: 992px) {
+  .financement .focus {
+    padding: 0 40px 40px;
+  }
+}
+
+.financement .focus__list {
+  margin: 15px 0;
+}
+
+.financement .focus__list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.financement .focus__list li:before {
+  content: url("/assets/icons/chevron-red-sm.svg");
+  display: block;
+  margin-right: 10px;
+}
+
+.financement .focus .c-card-triangle {
+  margin: auto;
+}
+
+@media (min-width: 992px) {
+  .financement .focus .c-card-triangle {
+    max-width: unset;
+  }
+}
+
+.financement .expert {
+  margin: 20px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fe4040;
+  padding: 30px 15px;
+  color: white;
+  text-align: center;
+}
+
+@media (min-width: 576px) {
+  .financement .expert {
+    padding: 30px 60px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -238,6 +238,13 @@
       box-shadow: none;
     }
   }
+  &--blue-smart {
+    background-color: $blue-smart;
+    &:active,
+    &:focus {
+      box-shadow: none;
+    }
+  }
 }
 
 // COMMENTS
