@@ -1,0 +1,21 @@
+.toeic {
+  .formulaire {
+    color: white;
+    background-color: $blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__input {
+      background-color: white;
+    }
+    &__heading {
+      color: white;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+    &__info {
+      margin-top: 10px;
+      font-size: 12px;
+    }
+  }
+}

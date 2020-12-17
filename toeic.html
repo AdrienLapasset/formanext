@@ -106,30 +106,84 @@
   </header>
   <!-- End Header -->
 
-  <main class="financement">
+  <main class="toeic">
 
     <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <section class="hero">
+            <div class="c-tag c-tag--small">
+              <img class="c-tag__icon" src="assets/icons/rocket.svg" alt="Efficacité professionnelle">
+              <span>Efficacité professionnelle</span>
+            </div>
+            <h2 class="c-heading c-heading--1 mb-2">Formation Anglais</h2>
+          </section>
+        </div>
+        <div class="col-lg-6">
+          <section class="formulaire c-block">
+            <h2 class="formulaire__heading">Intéressé</h2>
+            <div class="c-card-triangle c-card-triangle--no-hover mb-4">
+              <img class="c-card-triangle__bg" src="/assets/imgs/card-bg-red.svg" alt="formation">
+              <img class="c-card-triangle__img" src="/assets/imgs/a-propos-hero.jpg" alt="">
+            </div>
+            <form>
+              <div class="row">
+                <div class="col-12">
+                  <select class="formulaire__input formulaire__input--select" name="effective" required>
+                    <option value="">Vous êtes</option>
+                    <option value="women">Une femme</option>
+                    <option value="man">Un homme</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <input class="formulaire__input" placeholder="Prénom (requis)" type="text" name="lastName" required>
+                </div>
+                <div class="col-12">
+                  <input class="formulaire__input" placeholder="Nom (requis)" type="text" name="firstName" required>
+                </div>
+                <div class="col-12">
+                  <input class="formulaire__input" placeholder="Email (requis)" type="email" name="email" required>
+                </div>
+                <div class="col-12">
+                  <input class="formulaire__input" placeholder="Téléphone (requis)" type="text" name="phone" required>
+                </div>
+                <input type="submit" value="Recevoir une documentation" class="c-btn c-btn--red m-auto">
+              </div>
+            </form>
+            <p class="formulaire__info">toto</p>
+          </section>
+        </div>
+      </div>
 
-      <!-- Hero -->
-      <section class="hero">
+      <section class="c-chiffres">
+        <h2 class="c-heading c-heading--2sm mb-4">Quelques chiffres clés</h2>
         <div class="row">
-          <div class="col-lg-7 d-flex flex-column justify-content-center align-items-start">
-            <h1 class="c-heading c-heading--1sm">
-              Financer à 100%<br class="d-none d-lg-block"> sa formation professionnelle c’est possible
-            </h1>
-            <p class="hero__text">
-              Demandeur d’emploi, salarié, entrepreneur… Quel que soit votre statut, il existe en France de nombreuses solutions, dont le CPF, pour financer jusqu’à 100% votre projet de formation. </p>
-            <a href="" class="c-btn c-btn--red mb-4 mb-lg-0">
-              <img class="mr-2" src="assets/icons/coins.svg" alt="">
-              Je check mon éligibilité
-            </a>
+          <div class="col-sm-4 d-flex flex-column align-items-center mb-4">
+            <div class="c-chiffres__icon-container">
+              <img src="/assets/icons/icons8-diploma.svg" alt="">
+            </div>
+            <p class="c-chiffres__chiffre">100%</p>
+            <p class="c-chiffres__text">Des formations reconnues<br>
+              par les employeurs</p>
           </div>
-          <div class="col-lg-5">
-            <img class="hero__img" src="/assets/imgs/financement-hero.png" alt="Nos formations métiers 100% digital learning">
+          <div class="col-sm-4 d-flex flex-column align-items-center mb-4">
+            <div class="c-chiffres__icon-container">
+              <img src="/assets/icons/icons8-new_job.svg" alt="">
+            </div>
+            <p class="c-chiffres__chiffre">96,7%</p>
+            <p class="c-chiffres__text">
+              Taux d’emploi net à 6 mois<br> après une formation<br> diplômante (enquête 2019)
+            </p>
+          </div>
+          <div class="col-sm-4 d-flex flex-column align-items-center mb-4">
+            <div class="c-chiffres__icon-container">
+              <img src="/assets/icons/icons8-handshake.svg" alt="">
+            </div>
+            <p class="c-chiffres__chiffre">+500</p>
+            <p class="c-chiffres__text">Entreprises<br>partenaires</p>
           </div>
         </div>
       </section>
-
 
       <!-- Les experts -->
       <section class="c-les-experts">
@@ -176,67 +230,6 @@
             </li>
           </ol>
         </div>
-      </section>
-
-      <!-- Focus -->
-      <section class="focus">
-        <h2 class="c-heading c-heading--2sm my-5 text-center">Focus sur le CPF, votre meilleur allié financement</h2>
-
-        <div class="row mb-5 mb-xl-0">
-          <div class="col-lg-6 order-lg-last">
-            <div class="c-card-triangle c-card-triangle--no-hover mb-4 mb-lg-0">
-              <img class="c-card-triangle__bg" src="/assets/imgs/card-bg-red.svg" alt="formation">
-              <img class="c-card-triangle__img" src="/assets/imgs/cpf-hero.jpg" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 d-flex flex-column align-items-center align-items-lg-start justify-content-center">
-            <p class="mb-3">
-              Le compte personnel de formation (CPF) est utilisable par tout salarié, tout au long de sa vie active, y compris en période de chômage, pour suivre une formation qualifiante ou certifiante.
-            </p>
-            <strong>Le CPF s'adresse à toute personne :</strong>
-            <ul class="focus__list">
-              <li>Salarié</li>
-              <li>Membre d'une profession libérale ou d'une profession non salariée</li>
-              <li>Conjoint collaborateur</li>
-              <li>Travailleur indépendant</li>
-              <li>À la recherche d'un emploi</li>
-            </ul>
-            <a href="" class="c-btn c-btn--red">
-              <img class="mr-2" src="assets/icons/coins.svg" alt="">
-              Je check mon éligibilité
-            </a>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-lg-6">
-            <div class="c-card-triangle c-card-triangle--no-hover mb-4 mb-lg-0">
-              <img class="c-card-triangle__bg" src="/assets/imgs/card-bg-red.svg" alt="formation">
-              <img class="c-card-triangle__img" src="/assets/logos/mon-compte-formation.png" alt="">
-            </div>
-          </div>
-          <div class="col-lg-6 d-flex flex-column align-items-center align-items-lg-start justify-content-center">
-            <p class="mb-2">A partir de plus de 50% d’un temps complet, chaque bénéficiaire reçoit sur ce compte 500€ par an, dans une limite de 5 000€.</p>
-            <p class="mb-2">Cette cagnotte est alors mobilisable pour se former à tout moment !</p>
-            <p class="mb-4"><strong>Pour vérifier le montant de votre cagnotte personnelle, connectez-vous sur moncompteformation.gouv.fr.</strong></p>
-            <a href="" class="c-btn c-btn--red mb-4">
-              <img class="mr-2" src="assets/icons/coins.svg" alt="">
-              Je check mon éligibilité
-            </a>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- Expert -->
-      <section class="expert">
-        <h2 class="c-heading c-heading--3">
-          Pour en savoir plus sur le CPF, mais aussi sur les autres dispositifs de financement activables, nos experts en financement sont à votre disposition.
-        </h2>
-        <a href="" class="c-btn c-btn--blue-smart mt-4">
-          <img class="mr-2" src="/assets/icons/messaging.svg" alt="">
-          Je contacte un experten financement
-        </a>
       </section>
 
       <!-- Container -->
@@ -338,11 +331,10 @@
             </div>
           </div>
         </section>
-
       </div>
-      <!-- End container -->
 
     </div>
+    <!-- End container -->
 
   </main>
 
