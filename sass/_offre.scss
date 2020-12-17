@@ -203,24 +203,9 @@
     color: white;
     background-color: $red;
   }
-  .objectifs {
+  .c-objectifs {
     @include media-breakpoint-up(lg) {
       height: 100%;
-      padding-right: 100px;
-    }
-    &__strong {
-      font-weight: 500;
-      margin: 20px 0;
-      display: block;
-    }
-    &__list-item {
-      display: flex;
-      align-items: flex-start;
-      margin-bottom: 10px;
-    }
-    &__list-icon {
-      width: 20px;
-      margin-right: 10px;
     }
   }
   .une-formation {

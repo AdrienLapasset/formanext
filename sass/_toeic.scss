@@ -1,4 +1,15 @@
 .toeic {
+  .hero {
+    &__text {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    .c-tag {
+      &__icon {
+        width: 11px;
+      }
+    }
+  }
   .formulaire {
     color: white;
     background-color: $blue;
@@ -15,7 +26,7 @@
     }
     &__info {
       margin-top: 10px;
-      font-size: 12px;
+      font-size: 10px;
     }
   }
 }

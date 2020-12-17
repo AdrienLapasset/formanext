@@ -692,6 +692,33 @@ strong {
   width: 30px;
 }
 
+@media (min-width: 992px) {
+  .c-objectifs {
+    padding-right: 100px;
+  }
+}
+
+.c-objectifs__strong {
+  font-weight: 500;
+  margin: 20px 0;
+  display: block;
+}
+
+.c-objectifs__list-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.c-objectifs__list-icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
 .header {
   margin-bottom: 20px;
 }
@@ -2616,31 +2643,9 @@ strong {
 }
 
 @media (min-width: 992px) {
-  .offre .objectifs {
+  .offre .c-objectifs {
     height: 100%;
-    padding-right: 100px;
   }
-}
-
-.offre .objectifs__strong {
-  font-weight: 500;
-  margin: 20px 0;
-  display: block;
-}
-
-.offre .objectifs__list-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  margin-bottom: 10px;
-}
-
-.offre .objectifs__list-icon {
-  width: 20px;
-  margin-right: 10px;
 }
 
 .offre .une-formation {
@@ -3325,6 +3330,15 @@ strong {
   font-weight: 700;
 }
 
+.toeic .hero__text {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.toeic .hero .c-tag__icon {
+  width: 11px;
+}
+
 .toeic .formulaire {
   color: white;
   background-color: #2ab7c0;
@@ -3352,6 +3366,6 @@ strong {
 
 .toeic .formulaire__info {
   margin-top: 10px;
-  font-size: 12px;
+  font-size: 10px;
 }
 /*# sourceMappingURL=style.css.map */
