@@ -704,7 +704,7 @@ strong {
   display: block;
 }
 
-.c-objectifs__list-item {
+.c-objectifs li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,9 +714,11 @@ strong {
   margin-bottom: 10px;
 }
 
-.c-objectifs__list-icon {
+.c-objectifs li:before {
+  content: url("/assets/icons/chevron-red-sm.svg");
+  display: block;
   width: 20px;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 
 .header {
@@ -3330,16 +3332,16 @@ strong {
   font-weight: 700;
 }
 
-.toeic .hero__text {
+.formation .hero__text {
   font-size: 18px;
   margin: 20px 0;
 }
 
-.toeic .hero .c-tag__icon {
+.formation .hero .c-tag__icon {
   width: 11px;
 }
 
-.toeic .formulaire {
+.formation .formulaire {
   color: white;
   background-color: #2ab7c0;
   display: -webkit-box;
@@ -3354,18 +3356,18 @@ strong {
           align-items: center;
 }
 
-.toeic .formulaire__input {
+.formation .formulaire__input {
   background-color: white;
   font-size: 18px;
 }
 
-.toeic .formulaire__heading {
+.formation .formulaire__heading {
   color: white;
   font-size: 18px;
   text-transform: uppercase;
 }
 
-.toeic .formulaire__info {
+.formation .formulaire__info {
   margin-top: 10px;
   font-size: 10px;
 }

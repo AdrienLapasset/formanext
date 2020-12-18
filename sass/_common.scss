@@ -410,6 +410,7 @@
   }
 }
 
+// Objectifs list block
 .c-objectifs {
   @include media-breakpoint-up(lg) {
     padding-right: 100px;
@@ -419,13 +420,15 @@
     margin: 20px 0;
     display: block;
   }
-  &__list-item {
+  li {
     display: flex;
     align-items: flex-start;
     margin-bottom: 10px;
-  }
-  &__list-icon {
-    width: 20px;
-    margin-right: 10px;
+    &:before {
+      content: url("/assets/icons/chevron-red-sm.svg");
+      display: block;
+      width: 20px;
+      margin-right: 5px;
+    }
   }
 }
