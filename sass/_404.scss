@@ -1,0 +1,14 @@
+.not-found {
+  .formulaire {
+    position: relative;
+    &__input {
+      margin-top: 10px;
+      background-color: white;
+    }
+    &__input-icon {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+  }
+}

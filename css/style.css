@@ -3413,4 +3413,19 @@ strong {
   margin-top: 10px;
   font-size: 10px;
 }
+
+.not-found .formulaire {
+  position: relative;
+}
+
+.not-found .formulaire__input {
+  margin-top: 10px;
+  background-color: white;
+}
+
+.not-found .formulaire__input-icon {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
 /*# sourceMappingURL=style.css.map */
